@@ -59,6 +59,7 @@
 
                 .main-navigation .main-menu>li>a {
                     font-weight: normal;
+                    color: black;
                 }
 
             </style>
