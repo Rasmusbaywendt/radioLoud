@@ -25,6 +25,7 @@ get_header();
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
+        <nav id="filtrering"></nav>
         <section id="liste"></section>
     </main><!-- #main -->
     <script>
