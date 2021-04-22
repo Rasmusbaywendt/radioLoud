@@ -1,0 +1,110 @@
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package WordPress
+ * @subpackage Twenty_Nineteen
+ * @since Twenty Nineteen 1.0
+ */
+
+get_header();
+?>
+
+<?php
+
+			// Start the Loop.
+			while ( have_posts() ) :
+				the_post();
+
+				get_template_part( 'template-parts/content/content', 'page' );
+
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) {
+					comments_template();
+				}
+
+			endwhile; // End the loop.
+			?>
+			
+ <!--  her starter min kode-->
+ 
+ <template >
+     <article>
+         <img src="" alt="">
+         <div>
+             <h2></h2>
+             <p class="beskrivelse"></p>
+         </div>
+     </article>
+ </template>
+ <section id="primary" class="content-area">
+     <main id="main" class="site-main">
+     <nav id="filtrering"><button date-podcast="alle">Alle</button></nav>
+     <section id="podcastcontainer">
+     </section>
+     </main> <!-- #main -->
+     
+     <script>
+        let podcasts;
+        let categories;
+        let filterPodcast = "alle";
+        const dbUrl = ""; 
+        const catUrl = "";
+         
+        async function getJson () {
+            const data = await fetch(dbUrl);
+            const catdata = await fetch(carUrl);
+            podcasts = await data.json();
+            console.log(categories);
+            visPoscasts();
+            opretknapper();
+        }
+        
+         function opretknapper() {
+             
+             categories.forEach(cat => {
+                 document.querySelector("filtrering").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
+            })
+            addEventListenerToButtons();
+         }
+         
+         function addEventListenersToButtons() {
+             document.querySelectorAll("#filtrering button").forEach(elm => {
+                 elm.addEventListener("click", filtrering);
+             })
+         };
+         
+         function filtrering() {
+             let temp = document.querySelector("template");
+             let container = document.querySelector("#podcastcontainer")
+             container.innerHTML = "";
+             poscasts.forEach(podcast => {
+                 if(filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcast))){
+                     
+                     let klon = temp.cloneNode(true).content;
+                     klon.querySelector("h2").textContent = podcast.tetle.rendered;
+                     //                     klon.querySelector("img).src = ret.billede.guid;
+                     klon.querySelector(".beskrivelse").innerHTML = podcast.content.rendered;
+                     //                     klon.querySelector(".pris").textContent = ret.pris;
+                     klon.querySelector("article").addEventListener("click",() => { 
+                         location.href = podcast.link;
+                     })
+                     container.appendChild(klon);
+                 }
+             })
+         }
+         getJson();
+         
+         
+     </script>
+</section> <!-- #primary -->
+ 
+		
+
+			
+
+
+<?php
+get_footer();
