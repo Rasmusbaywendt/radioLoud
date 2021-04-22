@@ -16,9 +16,10 @@ get_header();
         <main id="main" class="site-main">
 
             <article>
+
                 <img class="pic" src="" alt="">
                 <div>
-                    <h2></h2>
+                    <h1></h1>
                     <p class="beskrivelse"></p>
                 </div>
 
@@ -33,14 +34,16 @@ get_header();
             async function getJson() {
                 const data = await fetch(dbUrl);
                 podcast = await data.json();
+
                 visPodcasts();
             }
 
 
             function visPodcasts() {
-                document.querySelector("h2").textContent = podcast.title.rendered;
+                console.log("visPodcasts");
+                document.querySelector("h1").innerHTML = podcast.title.rendered;
                 document.querySelector(".pic").src = podcast.billede.guid;
-                document.querySelector(".beskrivelse").textContent = podcast.beskrivelse;
+                document.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
 
             }
 
