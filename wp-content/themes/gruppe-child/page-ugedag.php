@@ -11,13 +11,36 @@
 
 get_header();
 ?>
+<style>
+    .loopart {
+        display: flex;
+    }
 
+    #liste img {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+    }
+
+    .tekst {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .afspil img {
+        width: 5vw;
+        height: 5vw;
+    }
+
+</style>
 <template>
     <article class="loopart">
         <h2 class="tid"></h2>
         <img src="" alt="" class="podcastbillede">
-        <h2 class="titel"></h2>
-        <h3 class="beskrivelse"></h3>
+        <div class="tekst">
+            <h2 class="titel"></h2>
+            <p class="beskrivelse"></p>
+        </div>
         <img src="" alt="" class="afspil">
         <img src="" alt="" class="pause">
     </article>
@@ -77,7 +100,7 @@ get_header();
             dest.textContent = ""; // ryd container inden ny loop
             ugedage.forEach(ugedag => {
                 const klon = skabelon.cloneNode(true);
-                klon.querySelector(".tid").textContent = ugedag.tid.categories;
+                klon.querySelector(".tid").textContent = ugedag.tid;
                 klon.querySelector(".podcastbillede").src = ugedag.podcastbillede.guid;
                 klon.querySelector(".titel").textContent = ugedag.title.rendered;
                 klon.querySelector(".beskrivelse").textContent = ugedag.beskrivelse;
