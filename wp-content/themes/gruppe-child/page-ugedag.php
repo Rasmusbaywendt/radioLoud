@@ -11,13 +11,40 @@
 
 get_header();
 ?>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
+    #filtrering {
+        text-align: center;
+    }
+
+    button {
+        margin: 0.4vw;
+    }
+
+    #filtrering button {
+        font-family: 'Rubik';
+        font-weight: 400;
+        color: black;
+        background: none;
+    }
+
+    #filtrering button:hover {
+        background-color: #04145D;
+        color: white;
+    }
+
+
     .site-content {
         background-color: #98CEFD;
+
     }
 
     .loopart {
         display: flex;
+        margin-left: 13vw;
+        margin-right: 13vw;
     }
 
     #liste .podcastbillede {
@@ -33,35 +60,52 @@ get_header();
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 2vw;
+        top: 1vw;
     }
 
     .afspil {
+        position: relative;
+        top: 7vw;
         width: 5vw;
         height: 5vw;
     }
 
     .pause {
+        position: relative;
+        top: 7vw;
         width: 5vw;
         height: 5vw;
     }
 
     .tid {
+        font-family: 'Rubik';
+        color: #DA083A;
         position: relative;
         top: 2vw;
         font-size: 1rem;
     }
 
     .titel {
+        font-family: 'Rubik';
+        color: #DA083A;
+        position: relative;
+        bottom: 1vw;
         font-size: 1rem;
     }
 
     .beskrivelse {
+        font-family: 'Quicksand', sans-serif;
+        position: relative;
+        bottom: 3vw;
+        padding-right: 4vw;
         font-size: 0.8rem;
+
+
     }
 
     H1 {
-        color: black;
+        font-family: 'Rubik';
+        color: #DA083A;
         text-align: center;
     }
 
@@ -92,6 +136,7 @@ get_header();
         document.addEventListener("DOMContentLoaded", loadJSON)
         let ugedage;
         let categories;
+        let filterUgedag;
 
         const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/ugedag?per_page=100";
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/categories";
@@ -109,7 +154,7 @@ get_header();
         function opretknapper() {
 
             categories.forEach(cat => {
-                document.querySelector("#filtrering").innerHTML += `<button class="filter" data-ugedage="${cat.id}">${cat.name}</button>`
+                document.querySelector("#filtrering").innerHTML += `<button class="filter" data-ugedag="${cat.id}">${cat.name}</button>`
             })
 
             addEventListenersToButtons();
@@ -122,8 +167,8 @@ get_header();
         };
 
         function filtrering() {
-            filterUgedage = this.dataset.ugedage;
-            console.log(filterUgedage);
+            filterUgedag = this.dataset.ugedag;
+            console.log(filterUgedag);
 
             visUgedage();
         }
@@ -134,15 +179,17 @@ get_header();
             const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
             dest.textContent = ""; // ryd container inden ny loop
             ugedage.forEach(ugedag => {
-                const klon = skabelon.cloneNode(true);
-                klon.querySelector(".tid").textContent = ugedag.tid;
-                klon.querySelector(".podcastbillede").src = ugedag.podcastbillede.guid;
-                klon.querySelector(".titel").textContent = ugedag.title.rendered;
-                klon.querySelector(".beskrivelse").textContent = ugedag.beskrivelse;
-                klon.querySelector(".afspil").src = ugedag.afspil.guid;
-                klon.querySelector(".pause").src = ugedag.pause.guid;
-                // nyt
-                dest.appendChild(klon);
+                if (ugedag.categories.includes(parseInt(filterUgedag))) {
+                    const klon = skabelon.cloneNode(true);
+                    klon.querySelector(".tid").textContent = ugedag.tid;
+                    klon.querySelector(".podcastbillede").src = ugedag.podcastbillede.guid;
+                    klon.querySelector(".titel").textContent = ugedag.title.rendered;
+                    klon.querySelector(".beskrivelse").textContent = ugedag.beskrivelse;
+                    klon.querySelector(".afspil").src = ugedag.afspil.guid;
+                    klon.querySelector(".pause").src = ugedag.pause.guid;
+                    // nyt
+                    dest.appendChild(klon);
+                }
             })
         }
 

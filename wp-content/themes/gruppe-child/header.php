@@ -19,7 +19,6 @@
     }
 
     .site-branding-container ul {
-        position: relative;
         left: 50vw;
     }
 
