@@ -11,7 +11,16 @@
 
 get_header();
 ?>
+<style>
+    #page {
+        background-color: blue;
+    }
 
+    .site-content {
+        background-color: blue;
+    }
+
+</style>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
