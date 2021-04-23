@@ -27,7 +27,7 @@ get_header();
  
  <section id="primary" class="content-area">
      <main id="main" class="site-main">
-     <div style="text-align:center;" style="display: inline";>
+     <div style="text-align:center;" style="display: flex";>
      <nav id="filtrering" ><button date-podcast="alle">Alle</button></nav>
      <nav id="filtrering"><button date-podcast="">Aktuelt</button></nav>
         <nav id="filtrering"><button date-podcast="">Crime</button></nav>
@@ -46,13 +46,12 @@ get_header();
         let podcasts;
         let categories;
         let filterPodcast = "alle";
-         let filterPodcast = "";
         const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast?per_page=100"; 
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2//categories";
          
         async function getJson () {
-            const data = await fetch(dbUrl);
-            const catdata = await fetch(carUrl);
+            const data = await fetch("http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast?per_page=100");
+            const catdata = await fetch("http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2//categories");
             podcasts = await data.json();
             console.log(categories);
             visPoscasts();
@@ -94,10 +93,7 @@ get_header();
          }
          getJson();
          
-         
      </script>
- 
-		
 
 <?php
 get_footer();
