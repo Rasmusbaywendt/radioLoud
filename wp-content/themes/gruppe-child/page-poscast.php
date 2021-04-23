@@ -1,10 +1,5 @@
 <?php
 /**
- * Template Name: Poscast
- */
-
-<?php
-/**
  * The template for displaying poscast
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
