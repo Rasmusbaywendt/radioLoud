@@ -63,11 +63,14 @@ get_header();
                                     <p class="beskrivelse"></p>
                                 </div>
                             </article>
+
                             <section class="episoder">
                                 <template>
                                     <article>
-                                        <h3></h3>
-                                        <h4></h4>
+                                        <div>
+                                            <h3></h3>
+                                            <h4></h4>
+                                        </div>
                                     </article>
                                 </template>
                             </section>
