@@ -12,24 +12,57 @@
 get_header();
 ?>
 <style>
+    .site-content {
+        background-color: #98CEFD;
+    }
+
     .loopart {
         display: flex;
     }
 
-    #liste img {
-        width: 20vw;
-        height: 20vw;
+    #liste .podcastbillede {
+        width: 8vw;
+        height: 8vw;
         border-radius: 50%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-top: 5vw;
     }
 
     .tekst {
         display: flex;
         flex-direction: column;
+        position: relative;
+        top: 2vw;
     }
 
-    .afspil img {
+    .afspil {
         width: 5vw;
         height: 5vw;
+    }
+
+    .pause {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .tid {
+        position: relative;
+        top: 2vw;
+        font-size: 1rem;
+    }
+
+    .titel {
+        font-size: 1rem;
+    }
+
+    .beskrivelse {
+        font-size: 0.8rem;
+    }
+
+    H1 {
+        color: black;
+        text-align: center;
     }
 
 </style>
@@ -48,7 +81,9 @@ get_header();
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
-        <nav id="filtrering"></nav>
+        <h1>SENDEPLAN</h1>
+        <nav id="filtrering">
+        </nav>
         <section id="liste"></section>
     </main><!-- #main -->
     <script>
