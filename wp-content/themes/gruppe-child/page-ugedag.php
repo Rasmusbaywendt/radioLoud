@@ -76,13 +76,7 @@ get_header();
             const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
             dest.textContent = ""; // ryd container inden ny loop
             ugedage.forEach(ugedag => {
-                const klon = skabelon.cloneNode(true);
-                klon.querySelector(".tid").textContent = ugedag.tid.categories;
-                klon.querySelector(".podcastbillede").src = ugedag.podcastbillede.guid;
-                klon.querySelector(".titel").textContent = ugedag.title.rendered;
-                klon.querySelector(".beskrivelse").textContent = ugedag.beskrivelse;
-                klon.querySelector(".afspil").src = ugedag.afspil.guid;
-                klon.querySelector(".pause").src = ugedag.pause.guid;
+                    ugedage.categories.includes(parseInt(filterUgedage))) const klon = skabelon.cloneNode(true); klon.querySelector(".tid").textContent = ugedag.tid.categories; klon.querySelector(".podcastbillede").src = ugedag.podcastbillede.guid; klon.querySelector(".titel").textContent = ugedag.title.rendered; klon.querySelector(".beskrivelse").textContent = ugedag.beskrivelse; klon.querySelector(".afspil").src = ugedag.afspil.guid; klon.querySelector(".pause").src = ugedag.pause.guid;
                 // nyt
                 dest.appendChild(klon);
             })
