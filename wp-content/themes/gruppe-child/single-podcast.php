@@ -62,20 +62,32 @@ get_header();
                                 <h1></h1>
                                 <p class="beskrivelse"></p>
                             </div>
-
                         </article>
+                        <section class="episoder">
+                            <template>
+                                <article>
+                                    <h3></h3>
+                                    <h4></h4>
+                                </article>
+                            </template>
+                        </section>
                     </main>
                     <!-- #main -->
 
                     <script>
                         let podcast;
-                        const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast/" + <?php echo get_the_ID() ?>;
+                        let episoder;
+                        let aktuelpodcast = <?php echo get_the_ID() ?>;
+                        const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast/" + aktuelpodcast;
+                        const episodeUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/episode?per_page=100"
+                        const container = document.querySelector(".episoder");
 
                         async function getJson() {
                             const data = await fetch(dbUrl);
                             podcast = await data.json();
 
                             visPodcasts();
+                            visEpisoder();
                         }
 
 
@@ -84,6 +96,23 @@ get_header();
                             document.querySelector("h1").innerHTML = podcast.title.rendered;
                             document.querySelector(".pic").src = podcast.billede.guid;
                             document.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
+
+                        }
+
+                        function visEpisoder() {
+                            console.log("visEpisoder");
+                            let temp = document.querySelector("template");
+                            episoder.forEach(episode => {
+                                if (episode.horer_til_podcast == aktuelpodcast) {
+                                    let klon = temp.cloneNode(true).content;
+                                    klon.querySelector("h3").textContent = episode.title.rendered;
+                                    klon.querySelector("h4").textContent = episode.dato;
+                                    container.appendChild(klon);
+                                }
+                            })
+
+
+
 
                         }
 
