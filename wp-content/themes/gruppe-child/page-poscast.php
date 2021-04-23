@@ -50,8 +50,8 @@ get_header();
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2//categories";
          
         async function getJson () {
-            const data = await fetch(dbUrl);
-            const catdata = await fetch(carUrl);
+            const data = await fetch("http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast?per_page=100");
+            const catdata = await fetch("http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2//categories");
             podcasts = await data.json();
             console.log(categories);
             visPoscasts();
