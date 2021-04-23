@@ -38,3 +38,7 @@ a {
     font-weight: normal;
     color: black;
 }
+
+.site-branding-container {
+    text-align: right;
+}
