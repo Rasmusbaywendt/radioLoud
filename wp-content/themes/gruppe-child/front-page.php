@@ -20,6 +20,21 @@ get_header();
         background: linear-gradient(90deg, rgba(245, 244, 244, 1) 0%, rgba(151, 205, 252, 1) 100%);
     }
 
+    .ha-slick-content {
+        position: relative;
+        height: 86px;
+        bottom: 23px;
+    }
+
+    h2.ha-slick-title {
+        margin-bottom: 6px;
+        line-height: 0em;
+    }
+
+    p.ha-slick-subtitle {
+        line-height: 1.8rem;
+    }
+
 </style>
 
 <div id="primary" class="content-area">
