@@ -27,7 +27,7 @@ get_header();
  
  <section id="primary" class="content-area">
      <main id="main" class="site-main">
-     <div style="text-align:center;" style="display: inline";>
+     <div style="text-align:center;" style="display: flex";>
      <nav id="filtrering" ><button date-podcast="alle">Alle</button></nav>
      <nav id="filtrering"><button date-podcast="">Aktuelt</button></nav>
         <nav id="filtrering"><button date-podcast="">Crime</button></nav>
