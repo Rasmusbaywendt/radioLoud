@@ -2,7 +2,7 @@
 /**
  * The template for displaying poscast
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+* Template Name: Poscast
  *
  * @package WordPress
  * @subpackage Twenty_Nineteen
