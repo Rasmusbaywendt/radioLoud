@@ -27,8 +27,8 @@ get_header();
  
  <section id="primary" class="content-area">
      <main id="main" class="site-main">
-     <display: inline>
-     <nav id="filtrering"><button date-podcast="alle">Alle</button></nav>
+     
+     <nav id="filtrering" style="text-align:center;"><button date-podcast="alle">Alle</button></nav>
      <nav id="filtrering"><button date-podcast="">Aktuelt</button></nav>
         <nav id="filtrering"><button date-podcast="">Crime</button></nav>
         <nav id="filtrering"><button date-podcast="">Historie</button></nav>
@@ -36,16 +36,16 @@ get_header();
         <nav id="filtrering"><button date-podcast="">Nyheder</button></nav>
         <nav id="filtrering"><button date-podcast="">Samfund</button></nav>
         <nav id="filtrering"><button date-podcast="">Ungdom</button></nav>
-        </display:>
      <section id="podcastcontainer">
      </section>
      </main> <!-- #main -->
      </section> <!-- #primary -->
+     
      <script>
         let podcasts;
         let categories;
         let filterPodcast = "alle";
-         let filterPodcast = "Hej";
+         let filterPodcast = "";
         const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast?per_page=100"; 
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2//categories";
          
