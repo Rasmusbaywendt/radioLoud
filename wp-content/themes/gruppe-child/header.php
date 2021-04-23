@@ -19,6 +19,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <?php wp_head(); ?>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/lfd3jsr.css">
 </head>
 
 <body <?php body_class(); ?>>
@@ -30,24 +33,15 @@
         </a>
 
         <header id="masthead" class="<?php echo is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">
-            <style>
-                .site-header {
-                    padding: 1rem 0;
-                    background: white;
-                }
 
-                button {
-                    border: solid 1px;
-                }
-
-            </style>
 
 
 
             <div class="site-branding-container">
                 <?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
-                <button>LOUD LIVE</button>
+
             </div>
+
             <!-- .site-branding-container -->
 
             <?php if ( is_singular() && twentynineteen_can_show_post_thumbnail() ) : ?>

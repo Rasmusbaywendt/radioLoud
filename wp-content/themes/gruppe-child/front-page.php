@@ -11,11 +11,21 @@
 
 get_header();
 ?>
+<style>
+    #page {
+        background: linear-gradient(90deg, rgba(245, 244, 244, 1) 0%, rgba(151, 205, 252, 1) 100%);
+    }
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main">
+    .site-content {
+        background: linear-gradient(90deg, rgba(245, 244, 244, 1) 0%, rgba(151, 205, 252, 1) 100%);
+    }
 
-            <?php
+</style>
+
+<div id="primary" class="content-area">
+    <main id="main" class="site-main">
+
+        <?php
 
 			// Start the Loop.
 			while ( have_posts() ) :
@@ -31,10 +41,11 @@ get_header();
 			endwhile; // End the loop.
 			?>
 
-        </main>
-        <!-- #main -->
-    </div>
-    <!-- #primary -->
+    </main>
+    <!-- #main -->
+</div>
+<!-- #primary -->
 
-    <?php
+
+<?php
 get_footer();
