@@ -50,8 +50,8 @@ get_header();
         let podcasts;
         let categories;
         let filterPodcast = "alle";
-        const dbUrl = ""; 
-        const catUrl = "";
+        const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/podcast?per_page=100"; 
+        const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/categories";
          
         async function getJson () {
             const data = await fetch(dbUrl);
