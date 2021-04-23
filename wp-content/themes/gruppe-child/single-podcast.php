@@ -89,7 +89,7 @@ get_header();
                                 const data = await fetch(dbUrl);
                                 const data2 = await fetch(episodeUrl)
                                 podcast = await data.json();
-                                episode = await data2.json();
+                                episoder = await data2.json();
 
                                 visPodcasts();
                                 visEpisoder();
