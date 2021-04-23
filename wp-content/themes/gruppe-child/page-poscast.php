@@ -17,13 +17,14 @@ get_header();
  
  <template >
      <article>
-         <img src="" alt="">
+        <img src="" alt="" >
          <div>
-             <h2></h2>
+             <h2>Poscast er for alle</h2>
              <p class="beskrivelse"></p>
          </div>
      </article>
  </template>
+ 
  <section id="primary" class="content-area">
      <main id="main" class="site-main">
      <nav id="filtrering"><button date-podcast="alle">Alle</button></nav>
