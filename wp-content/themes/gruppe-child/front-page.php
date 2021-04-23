@@ -11,6 +11,7 @@
 
 get_header();
 ?>
+
 <style>
     #page {
         background: linear-gradient(90deg, rgba(245, 244, 244, 1) 0%, rgba(151, 205, 252, 1) 100%);
@@ -29,6 +30,7 @@ get_header();
     h2.ha-slick-title {
         margin-bottom: 6px;
         line-height: 0em;
+
     }
 
     p.ha-slick-subtitle {
