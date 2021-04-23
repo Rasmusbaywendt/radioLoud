@@ -11,6 +11,19 @@
  * @since Twenty Nineteen 1.0
  */
 ?>
+<style>
+    .site-logo {
+        top: -16px;
+        border-radius: 0%;
+        right: 30px;
+    }
+
+    .site-branding-container ul {
+        position: relative;
+        left: 50vw;
+    }
+
+</style>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 
