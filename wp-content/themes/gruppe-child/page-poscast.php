@@ -46,7 +46,6 @@ get_header();
         let podcasts;
         let categories;
         let filterPodcast = "alle";
-         let filterPodcast = "";
         const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast?per_page=100"; 
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2//categories";
          
