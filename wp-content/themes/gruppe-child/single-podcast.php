@@ -105,8 +105,8 @@ get_header();
                             episoder.forEach(episode => {
                                 if (episode.horer_til_podcast == aktuelpodcast) {
                                     let klon = temp.cloneNode(true).content;
-                                    klon.querySelector("h3").textContent = episode.navn.rendered;
-                                    klon.querySelector("h4").textContent = episode.dato.rendered;
+                                    klon.querySelector("h3").textContent = episode.title.rendered;
+                                    klon.querySelector("h4").textContent = episode.dato;
                                     container.appendChild(klon);
                                 }
                             })
