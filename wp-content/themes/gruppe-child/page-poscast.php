@@ -19,7 +19,7 @@ get_header();
      <article>
         <img src="" alt="" >
          <div>
-             <h2>Poscast er for alle</h2>
+             <h2></h2>
              <p class="beskrivelse"></p>
          </div>
      </article>
@@ -36,6 +36,7 @@ get_header();
         let podcasts;
         let categories;
         let filterPodcast = "alle";
+         let filterPodcast = "Hej";
         const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast?per_page=100"; 
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2//categories";
          
