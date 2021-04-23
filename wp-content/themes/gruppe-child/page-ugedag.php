@@ -50,7 +50,7 @@ get_header();
 
         function opretknapper() {
 
-            categories.forEach(cat => {
+            categories.ugedage.forEach(cat => {
                 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-ugedage="${cat.id}">${cat.name}</button>`
             })
 
