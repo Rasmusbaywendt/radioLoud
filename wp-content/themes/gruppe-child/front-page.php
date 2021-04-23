@@ -13,11 +13,11 @@ get_header();
 ?>
 <style>
     #page {
-        background: rgb(245, 244, 244);
+        background: linear-gradient(90deg, rgba(245, 244, 244, 1) 0%, rgba(151, 205, 252, 1) 100%);
     }
 
     .site-content {
-        background: rgb(245, 244, 244);
+        background: linear-gradient(90deg, rgba(245, 244, 244, 1) 0%, rgba(151, 205, 252, 1) 100%);
     }
 
 </style>
