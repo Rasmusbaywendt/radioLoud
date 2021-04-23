@@ -17,7 +17,7 @@ get_header();
     }
 
     .site-content {
-        background-color: blue;
+        background: rgb(245, 244, 244);
     }
 
 </style>
