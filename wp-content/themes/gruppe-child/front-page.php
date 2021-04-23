@@ -13,11 +13,11 @@ get_header();
 ?>
 <style>
     #page {
-        background-color: blue;
+        background: rgb(245, 244, 244);
     }
 
     .site-content {
-        background-color: blue;
+        background: rgb(245, 244, 244);
     }
 
 </style>
