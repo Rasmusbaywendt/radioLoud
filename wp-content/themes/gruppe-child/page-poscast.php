@@ -29,8 +29,8 @@ get_header();
      <main id="main" class="site-main">
      
      <nav id="filtrering" style="text-align:center;"><button date-podcast="alle">Alle</button></nav>
-     <nav id="filtrering"><button date-podcast="">Aktuelt</button></nav>
-        <nav id="filtrering"><button date-podcast="">Crime</button></nav>
+     <nav id="filtrering" style="text-align:center;"><button date-podcast="">Aktuelt</button></nav>
+        <nav id="filtrering" style="text-align:center;"><button date-podcast="">Crime</button></nav>
         <nav id="filtrering"><button date-podcast="">Historie</button></nav>
         <nav id="filtrering"><button date-podcast="">Kultur</button></nav>
         <nav id="filtrering"><button date-podcast="">Nyheder</button></nav>
