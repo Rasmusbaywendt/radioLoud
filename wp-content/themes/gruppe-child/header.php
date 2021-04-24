@@ -22,6 +22,19 @@
         left: 50vw;
     }
 
+    #menu-item-1291 {
+        border-radius: 10px;
+        padding: 6px 15px;
+        margin-left: 5px;
+        background-color: #DC0B3A;
+    }
+
+
+    .main-navigation .main-menu>li:last-child>a,
+    .main-navigation .main-menu>li:last-child.menu-item-has-children .submenu-expand {
+        color: white;
+    }
+
 </style>
 <!doctype html>
 <html <?php language_attributes(); ?>>
