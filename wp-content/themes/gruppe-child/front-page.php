@@ -37,6 +37,10 @@ get_header();
         line-height: 1.8rem;
     }
 
+    .elementor-13 .elementor-element.elementor-element-b03ed9a .ha-slick-content {
+        background-color: #04145D;
+    }
+
 </style>
 
 <div id="primary" class="content-area">
