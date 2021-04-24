@@ -18,6 +18,7 @@
         display: flex;
         gap: 104px;
         color: black;
+
     }
 
     .site-footer {
