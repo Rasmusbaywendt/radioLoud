@@ -14,6 +14,12 @@
 ?>
 
 <style>
+    .footer-navigation>div {
+        display: flex;
+        gap: 104px;
+        color: black;
+    }
+
     .site-footer {
         background-color: white;
     }
@@ -21,6 +27,10 @@
     .copyright {
         text-align: right;
         font-size: 14px;
+    }
+
+    ul {
+        list-style: none;
     }
 
 </style>
@@ -39,18 +49,27 @@
 			?>
         <?php if ( has_nav_menu( 'footer' ) ) : ?>
         <nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
-            <?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'menu_class'     => 'footer-menu',
-							'depth'          => 1,
-						)
-					);
-					?>
+            <div class="menu-footer-container">
+                <ul id="om_loud">
+                    <h4>OM LOUD</h4>
+                    <li id="loud_lab"><a href="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/loud-lab/">LOUD LAB</a></li>
+                    <li id="presse"><a href="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/presse/">PRESSE</a></li>
+                    <li id="job"><a href="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/job/">JOB</a></li>
+                </ul>
+                <ul id="kontakt">
+                    <h4>KONTAKT</h4>
+                    <li id="kontakt"><a href="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/kontakt-os/">KONTAKT OS</a></li>
+                </ul>
+                <ul id="indhold">
+                    <h4>INDHOLD</h4>
+                    <li id="tjenester"><a href="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/tjenester/">TJENESTER</a></li>
+                </ul>
+            </div>
+
         </nav>
+
         <div class="copyright">
-            <p>© Copyright 2020. Radio Loud.</p>
+            <p>© Copyright 2021. Radio Loud.</p>
         </div>
         <!-- .footer-navigation -->
         <?php endif; ?>
