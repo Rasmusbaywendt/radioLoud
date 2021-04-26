@@ -63,18 +63,14 @@ get_header();
         top: 1vw;
     }
 
-    .afspil {
+    .sepodcast {
         position: relative;
-        top: 7vw;
-        width: 5vw;
-        height: 5vw;
-    }
-
-    .pause {
-        position: relative;
-        top: 7vw;
-        width: 5vw;
-        height: 5vw;
+        top: 4vw;
+        font-family: 'Rubik';
+        font-size: 0.8rem;
+        font-weight: 600;
+        white-space: nowrap;
+        color: black;
     }
 
     .tid {
@@ -118,8 +114,7 @@ get_header();
             <h2 class="titel"></h2>
             <p class="beskrivelse"></p>
         </div>
-        <img src="" alt="" class="afspil">
-        <img src="" alt="" class="pause">
+        <H2 class="sepodcast">Se podcast</H2>
     </article>
 </template>
 
@@ -136,7 +131,7 @@ get_header();
         document.addEventListener("DOMContentLoaded", loadJSON)
         let ugedage;
         let categories;
-        let filterUgedag;
+        let filterUgedag = 39;
 
         const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/ugedag?per_page=100";
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/categories";
@@ -185,8 +180,7 @@ get_header();
                     klon.querySelector(".podcastbillede").src = ugedag.podcastbillede.guid;
                     klon.querySelector(".titel").textContent = ugedag.title.rendered;
                     klon.querySelector(".beskrivelse").textContent = ugedag.beskrivelse;
-                    klon.querySelector(".afspil").src = ugedag.afspil.guid;
-                    klon.querySelector(".pause").src = ugedag.pause.guid;
+                    klon.querySelector(".sepodcast").textContent = ugedag.sepodcast;
                     // nyt
                     dest.appendChild(klon);
                 }
