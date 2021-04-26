@@ -13,6 +13,7 @@ get_header();
 ?>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/lfd3jsr.css">
 
 <style>
     #page {
@@ -35,19 +36,44 @@ get_header();
         line-height: 0em;
     }
 
-    p.ha-slick-subtitle {
-        line-height: 1.8rem;
-        font-family: 'Quicksand', sans-serif;
+    /* h2 overskrifter til podcast på forside*/
+
+    .elementor-13 .elementor-element.elementor-element-5acd3cc .elementor-heading-title {
+        font-family: unit-rounded, sans-serif;
+        font-weight: 700;
+        font-style: normal;
     }
 
+    .elementor-widget-heading .elementor-heading-title {
+        font-family: unit-rounded, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+
+    /*
+    p.ha-slick-subtitle {
+    line-height: 1.8rem;
+    font-family: 'Quicksand', sans-serif;
+    }
+*/
+    /*p tekst i LOUD LAB sektion*/
+    .entry .entry-content p {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+    }
+
+    /*baggrundsfarve på tekststykke i podcat sektion*/
     .elementor-13 .elementor-element.elementor-element-b03ed9a .ha-slick-content {
         background-color: #04145D;
     }
 
+    /*Fjerner understregning på tekst i podcast sektion*/
     .entry .entry-content a {
         text-decoration: none;
     }
 
+    /*splashbillede på forside*/
     .elementor-13 .elementor-element.elementor-element-2fbb744:not(.elementor-motion-effects-element-type-background),
     .elementor-13 .elementor-element.elementor-element-2fbb744>.elementor-motion-effects-container>.elementor-motion-effects-layer {
         background-size: cover;
