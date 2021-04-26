@@ -49,6 +49,7 @@ a {
     margin: 80px;
     margin-top: 50px;
     border-radius: 15px;
+    margin-bottom: 50px;
 }
 .aktuel_podcast img {
     grid-column-start: 2;
@@ -58,7 +59,8 @@ a {
 }
 .beskrivelse_div {
     padding: 30px;
-    margin-right: 80px;
+    padding-left: 5px;
+    margin-right: 0px;
     padding-top: 0;
 }
 .beskrivelse_div p {
@@ -74,6 +76,7 @@ a {
     font-weight: 100;
     color: #FFFFFF;
     margin-bottom: 40px;
+    margin-right: 0;
 }
 .seneste_episoder {
     font-family: 'Rubik', sans-serif;
@@ -97,12 +100,20 @@ a {
     grid-column-end: 2;
     color: #04145D;
     font-size: 1.2rem;
+    padding-left: 20px;
 }
 .episode_dato {
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     text-align: right;
     color: #FFFFFF;
+}
+.play_knap {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');

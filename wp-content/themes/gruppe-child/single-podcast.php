@@ -36,6 +36,7 @@ get_header();
                                 <article>
                                     <div class="episode_grid">
                                         <h3 class="episode_titel"></h3>
+                                        <img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/play_circle.png" alt=" play-button">
                                         <h4 class="episode_dato"></h4>
                                     </div>
                                 </article>
