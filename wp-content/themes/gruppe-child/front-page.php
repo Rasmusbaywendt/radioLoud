@@ -11,6 +11,8 @@
 
 get_header();
 ?>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
 
 <style>
     #page {
@@ -25,16 +27,17 @@ get_header();
         position: relative;
         height: 86px;
         bottom: 23px;
+        background: none;
     }
 
     h2.ha-slick-title {
         margin-bottom: 6px;
         line-height: 0em;
-
     }
 
     p.ha-slick-subtitle {
         line-height: 1.8rem;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .elementor-13 .elementor-element.elementor-element-b03ed9a .ha-slick-content {
