@@ -70,7 +70,10 @@ get_header();
         font-size: 0.8rem;
         font-weight: 600;
         white-space: nowrap;
-        color: black;
+        color: white;
+        background-color: #DA083A;
+        height: 100%;
+        width: 100%;
     }
 
     .tid {
@@ -105,6 +108,12 @@ get_header();
         text-align: center;
     }
 
+    .sepodcast button {
+        background-color: white;
+        color: #DA083A;
+        padding: 0;
+    }
+
 </style>
 <template>
     <article class="loopart">
@@ -114,7 +123,7 @@ get_header();
             <h2 class="titel"></h2>
             <p class="beskrivelse"></p>
         </div>
-        <H2 class="sepodcast">Se podcast</H2>
+        <h2 class="sepodcast">Se podcast</h2>
     </article>
 </template>
 
