@@ -129,27 +129,27 @@ get_header();
         const header = document.querySelector("header h1");
 
         document.addEventListener("DOMContentLoaded", loadJSON)
+        let sendeplan;
         let ugedage;
-        let categories;
-        let filterUgedag = 39;
+        let filterSendeplan;
 
-        const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/ugedag?per_page=100";
-        const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/categories";
+        const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/sendeplan?per_page=100";
+        const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/ugedage";
 
         async function loadJSON() {
             const data = await fetch(dbUrl);
-            const catdata = await fetch(catUrl);
-            ugedage = await data.json();
-            categories = await catdata.json();
-            console.log(categories);
-            visUgedage();
+            const catdata = await fetch(catUrl)
+            sendeplan = await data.json();
+            ugedage = await catdata.json();
+            console.log(ugedage);
+            visSendeplan();
             opretknapper();
         }
 
         function opretknapper() {
 
-            categories.forEach(cat => {
-                document.querySelector("#filtrering").innerHTML += `<button class="filter" data-ugedag="${cat.id}">${cat.name}</button>`
+            ugedage.forEach(cat => {
+                document.querySelector("#filtrering").innerHTML += `<button class="filter" data-sendeplan="${cat.id}">${cat.name}</button>`
             })
 
             addEventListenersToButtons();
@@ -162,25 +162,25 @@ get_header();
         };
 
         function filtrering() {
-            filterUgedag = this.dataset.ugedag;
-            console.log(filterUgedag);
+            filterSendeplan = this.dataset.sendeplan;
+            console.log(filterSendeplan);
 
-            visUgedage();
+            visSendeplan();
         }
 
         //funktion der viser retter i liste view
-        function visUgedage() {
+        function visSendeplan() {
             const dest = document.querySelector("#liste"); // container til articles med en ret
             const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
             dest.textContent = ""; // ryd container inden ny loop
-            ugedage.forEach(ugedag => {
-                if (ugedag.categories.includes(parseInt(filterUgedag))) {
+            sendeplan.forEach(sendeplan => {
+                if (sendeplan.ugedage.includes(parseInt(filterSendeplan))) {
                     const klon = skabelon.cloneNode(true);
-                    klon.querySelector(".tid").textContent = ugedag.tid;
-                    klon.querySelector(".podcastbillede").src = ugedag.podcastbillede.guid;
-                    klon.querySelector(".titel").textContent = ugedag.title.rendered;
-                    klon.querySelector(".beskrivelse").textContent = ugedag.beskrivelse;
-                    klon.querySelector(".sepodcast").textContent = ugedag.sepodcast;
+                    klon.querySelector(".tid").textContent = sendeplan.tid;
+                    klon.querySelector(".podcastbillede").src = sendeplan.podcastbillede.guid;
+                    klon.querySelector(".titel").textContent = sendeplan.title.rendered;
+                    klon.querySelector(".beskrivelse").textContent = sendeplan.beskrivelse;
+                    klon.querySelector(".sepodcast").textContent = sendeplan.sepodcast;
                     // nyt
                     dest.appendChild(klon);
                 }
