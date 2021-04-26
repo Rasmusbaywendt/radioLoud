@@ -11,6 +11,10 @@
 
 get_header();
 ?>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <div class="single-podcast">
         <div id="primary" class="content-area">
             <main id="main" class="site-main">
@@ -30,9 +34,9 @@ get_header();
                         <section class="episoder">
                             <template>
                                 <article>
-                                    <div>
-                                        <h3></h3>
-                                        <h4></h4>
+                                    <div class="episode_grid">
+                                        <h3 class="episode_titel"></h3>
+                                        <h4 class="episode_dato"></h4>
                                     </div>
                                 </article>
                             </template>
@@ -84,8 +88,8 @@ get_header();
                                 if (horer == aktuelpodcast) {
                                     console.log("i pass if")
                                     let klon = temp.cloneNode(true).content;
-                                    klon.querySelector("h3").textContent = episode.title.rendered;
-                                    klon.querySelector("h4").textContent = episode.dato;
+                                    klon.querySelector(".episode_titel").textContent = episode.title.rendered;
+                                    klon.querySelector(".episode_dato").textContent = episode.dato;
                                     container.appendChild(klon);
                                 }
 
