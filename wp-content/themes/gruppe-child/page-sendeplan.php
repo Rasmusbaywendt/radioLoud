@@ -65,7 +65,8 @@ get_header();
 
     .sepodcast {
         position: relative;
-        top: 4vw;
+        top: 8vw;
+        left: 5vw;
         font-family: 'Rubik';
         font-size: 0.8rem;
         font-weight: 600;
@@ -73,7 +74,9 @@ get_header();
         color: white;
         background-color: #DA083A;
         height: 100%;
-        width: 100%;
+        padding: 9px 16px;
+        border-radius: 7px;
+
     }
 
     .tid {
@@ -111,7 +114,6 @@ get_header();
     .sepodcast button {
         background-color: white;
         color: #DA083A;
-        padding: 0;
     }
 
 </style>
@@ -123,7 +125,7 @@ get_header();
             <h2 class="titel"></h2>
             <p class="beskrivelse"></p>
         </div>
-        <h2 class="sepodcast">Se podcast</h2>
+        <a class="sepodcast">Se podcast</a>
     </article>
 </template>
 
@@ -140,7 +142,7 @@ get_header();
         document.addEventListener("DOMContentLoaded", loadJSON)
         let sendeplan;
         let ugedage;
-        let filterSendeplan;
+        let filterSendeplan = 59;
 
         const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/sendeplan?per_page=100";
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/ugedage";
