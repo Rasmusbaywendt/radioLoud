@@ -45,8 +45,9 @@ get_header();
     .beskrivelse {
         font-family: 'Quicksand', sans-serif;
         position: relative;
-        bottom: 3vw;
+        bottom: 1vw;
         font-size: 0.8rem;
+        padding: 1vw;
        
     }
 
