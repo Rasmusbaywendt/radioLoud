@@ -66,7 +66,6 @@ get_header();
     .sepodcast {
         position: relative;
         top: 8vw;
-        left: 5vw;
         font-family: 'Rubik';
         font-size: 0.8rem;
         font-weight: 600;
