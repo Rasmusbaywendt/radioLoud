@@ -2,43 +2,109 @@
 Theme Name: Gruppe-Child
 Template: twentynineteen
 Author: Gruppe17
-Version: 1.0.0
+Version: 1.0.4
 Description: Stylish Child Theme based on Twenty Nineteen
 */
 
 .entry-meta {
     display: none;
 }
-
 .site-header {
     padding: 1rem 0;
     background: white;
 }
-
 button {
     border: solid 1px;
 }
-
 .site-logo {
     top: -16px;
     border-radius: 0%;
 }
-
 .site-logo .custom-logo-link {
     border-radius: 0%;
 }
-
 a {
     font-family: unit-rounded, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
 .main-navigation .main-menu > li > a {
     font-weight: normal;
     color: black;
 }
-
 .site-branding-container {
     text-align: right;
 }
+
+/* SINGLE PODCAST */
+
+.single-podcast {
+    background-color: #98CEFD;
+}
+.aktuel_podcast {
+    background-color: #04145D;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 45px;
+    margin: 80px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.aktuel_podcast img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.beskrivelse_div {
+    padding: 30px;
+    margin-right: 80px;
+    padding-top: 0;
+}
+.beskrivelse_div p {
+    color: #FFFFFF;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 2;
+}
+.podcast_titel {
+    font-family: 'Rubik', sans-serif;
+    font-style: medium;
+    font-weight: 100;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.seneste_episoder {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.episode_grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 20px;
+}
+.episode_titel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: #04145D;
+    font-size: 1.2rem;
+}
+.episode_dato {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: right;
+    color: #FFFFFF;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+/* SINGLE PODCAST SLUT */

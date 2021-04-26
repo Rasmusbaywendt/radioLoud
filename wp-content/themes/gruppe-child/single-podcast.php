@@ -11,125 +11,102 @@
 
 get_header();
 ?>
-    <div id="single-podcast">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <div class="single-podcast">
         <div id="primary" class="content-area">
             <main id="main" class="site-main">
 
-                <?php
+                <section id="primary" class="content-area">
+                    <main id="main" class="site-main">
 
-			// Start the Loop.
-			while ( have_posts() ) :
-				the_post();
+                        <article class="aktuel_podcast">
+                            <div class="beskrivelse_div">
+                                <h1 class="podcast_titel"></h1>
+                                <p class="beskrivelse"></p>
+                            </div>
+                            <img class="pic" src="" alt="">
 
-				get_template_part( 'template-parts/content/content', 'single' );
+                        </article>
+                        <div class="seneste_episoder">SENESTE EPISODER</div>
+                        <section class="episoder">
+                            <template>
+                                <article>
+                                    <div class="episode_grid">
+                                        <h3 class="episode_titel"></h3>
+                                        <h4 class="episode_dato"></h4>
+                                    </div>
+                                </article>
+                            </template>
+                        </section>
+                    </main>
+                    <!-- #main -->
 
-				if ( is_singular( 'attachment' ) ) {
-					// Parent post navigation.
-					the_post_navigation(
-						array(
-							/* translators: %s: Parent post link. */
-							'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentynineteen' ), '%title' ),
-						)
-					);
-				} elseif ( is_singular( 'post' ) ) {
-					// Previous/next post navigation.
-					the_post_navigation(
-						array(
-							'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'twentynineteen' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Next post:', 'twentynineteen' ) . '</span> <br/>' .
-								'<span class="post-title">%title</span>',
-							'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'twentynineteen' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Previous post:', 'twentynineteen' ) . '</span> <br/>' .
-								'<span class="post-title">%title</span>',
-						)
-					);
-				}
+                    <script>
+                        let podcast;
+                        let episoder;
+                        let aktuelpodcast = <?php echo get_the_ID() ?>;
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
+                        const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast/" + aktuelpodcast;
 
-			endwhile; // End the loop.
-			?>
-                    <section id="primary" class="content-area">
-                        <main id="main" class="site-main">
+                        const episodeUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/episode?per_page=100";
 
-                            <article>
+                        const container = document.querySelector(".episoder");
 
-                                <img class="pic" src="" alt="">
-                                <div>
-                                    <h1></h1>
-                                    <p class="beskrivelse"></p>
-                                </div>
-                            </article>
+                        async function getJson() {
+                            const data = await fetch(dbUrl);
+                            podcast = await data.json();
 
-                            <section class="episoder">
-                                <template>
-                                    <article>
-                                        <div>
-                                            <h3></h3>
-                                            <h4></h4>
-                                        </div>
-                                    </article>
-                                </template>
-                            </section>
-                        </main>
-                        <!-- #main -->
+                            const data2 = await fetch(episodeUrl);
+                            episoder = await data2.json();
+                            console.log("episoder: ", episoder);
 
-                        <script>
-                            let podcast;
-                            let episoder;
-                            let aktuelpodcast = <?php echo get_the_ID() ?>;
-
-                            const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast/" + aktuelpodcast;
-
-                            const episodeUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/episode?per_page=100";
-
-                            const container = document.querySelector(".episoder");
-
-                            async function getJson() {
-                                const data = await fetch(dbUrl);
-                                const data2 = await fetch(episodeUrl)
-                                podcast = await data.json();
-                                episoder = await data2.json();
-
-                                visPodcasts();
-                                visEpisoder();
-                            }
+                            visPodcasts();
+                            visEpisoder();
+                        }
 
 
-                            function visPodcasts() {
-                                console.log("visPodcasts");
-                                document.querySelector("h1").innerHTML = podcast.title.rendered;
-                                document.querySelector(".pic").src = podcast.billede.guid;
-                                document.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
+                        function visPodcasts() {
+                            console.log("visPodcasts");
+                            document.querySelector(".podcast_titel").innerHTML = podcast.title.rendered;
+                            document.querySelector(".pic").src = podcast.billede.guid;
+                            document.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
 
-                            }
+                        }
 
-                            function visEpisoder() {
-                                console.log("visEpisoder");
-                                let temp = document.querySelector("template");
-                                episoder.forEach(episode => {
-                                    if (episode.horer_til_podcast == aktuelpodcast) {
-                                        let klon = temp.cloneNode(true).content;
-                                        klon.querySelector("h3").textContent = episode.title.rendered;
-                                        klon.querySelector("h4").textContent = episode.dato;
-                                        container.appendChild(klon);
-                                    }
-                                })
+                        function visEpisoder() {
+                            console.log("visEpisoder");
+                            let temp = document.querySelector("template");
+                            console.log(aktuelpodcast);
+                            episoder.forEach(episode => {
+                                console.log("Im at: ", episode.horer_til_podcast);
+                                const horer = episode.horer_til_podcast[0].id;
+                                console.log("tyeeew", horer);
+
+                                if (horer == aktuelpodcast) {
+                                    console.log("i pass if")
+                                    let klon = temp.cloneNode(true).content;
+                                    klon.querySelector(".episode_titel").textContent = episode.title.rendered;
+                                    klon.querySelector(".episode_dato").textContent = episode.dato;
+                                    container.appendChild(klon);
+                                }
+
+
+                            })
 
 
 
 
-                            }
+                        }
 
-                            getJson();
+                        getJson();
 
-                        </script>
+                    </script>
 
-                    </section>
-                    <!-- #primary -->
+                </section>
+                <!-- #primary -->
             </main>
             <!-- #main -->
         </div>

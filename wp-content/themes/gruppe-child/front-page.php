@@ -41,6 +41,10 @@ get_header();
         background-color: #04145D;
     }
 
+    .entry .entry-content a {
+        text-decoration: none;
+    }
+
 </style>
 
 <div id="primary" class="content-area">
