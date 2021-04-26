@@ -11,17 +11,84 @@
 
 get_header();
 ?>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 
+<style>
+ #filtrering {
+        text-align: center;
+    }
+
+    button {
+        margin: 0.4vw;
+    }
+
+    #filtrering button {
+        font-family: 'Rubik';
+        font-weight: 400;
+        color: black;
+        background: none;
+    }
+
+    #filtrering button:hover {
+        background-color: #04145D;
+        color: white;
+    }
+     .titel {
+        font-family: 'Rubik';
+        color: #DA083A;
+        position: relative;
+        bottom: 1vw;
+        font-size: 1rem;
+    }
+
+    .beskrivelse {
+        font-family: 'Quicksand', sans-serif;
+        position: relative;
+        bottom: 3vw;
+        font-size: 0.8rem;
+       
+    }
+
+    H2 {
+        font-family: 'Rubik';
+        color: #DA083A;
+        text-align: center;
+        padding-bottom: 3vw;
+        
+        
+    }
+    img {
+        padding-left: 4vw;
+        width: 90%;
+        height:30%;
+       
+    }
+    
+    #podcastcontainer {
+      display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2vw;  
+    grid-row-gap:2vw;
+    padding: 2vw;    
+    }
+    
+    #holdind {
+    border: 5px solid black;
+    }
+
+    
+</style>
 			
  <!--  her starter min kode-->
  
  <template >
-     <article>
-        <img class="podcastimg" src="" alt="" >
+     <article id="holdind">
+          <div> <img class="podcastimg" src="" alt="" >
          <div>
              <h2></h2>
              <p class="beskrivelse"></p>
-         </div>
+         </div></div>
      </article>
  </template>
  
