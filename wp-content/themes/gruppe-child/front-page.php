@@ -45,6 +45,10 @@ get_header();
         text-decoration: none;
     }
 
+    .elementor-section elementor-top-section elementor-element elementor-element-2fbb744 elementor-section-full_width elementor-section-height-min-height elementor-section-stretched elementor-section-height-default elementor-section-items-middle {
+        background-size: cover;
+    }
+
 </style>
 
 <div id="primary" class="content-area">
