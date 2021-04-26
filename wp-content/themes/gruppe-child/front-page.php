@@ -45,7 +45,8 @@ get_header();
         text-decoration: none;
     }
 
-    .elementor-section elementor-top-section elementor-element elementor-element-2fbb744 elementor-section-full_width elementor-section-height-min-height elementor-section-stretched elementor-section-height-default elementor-section-items-middle {
+    .elementor-13 .elementor-element.elementor-element-2fbb744:not(.elementor-motion-effects-element-type-background),
+    .elementor-13 .elementor-element.elementor-element-2fbb744>.elementor-motion-effects-container>.elementor-motion-effects-layer {
         background-size: cover;
     }
 
