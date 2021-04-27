@@ -36,6 +36,7 @@ get_header();
     }
 
 
+
     .site-content {
         background-color: #98CEFD;
 
@@ -65,12 +66,17 @@ get_header();
 
     .sepodcast {
         position: relative;
-        top: 4vw;
+        top: 8vw;
         font-family: 'Rubik';
         font-size: 0.8rem;
         font-weight: 600;
         white-space: nowrap;
-        color: black;
+        color: white;
+        background-color: #DA083A;
+        height: 5%;
+        padding: 9px 16px;
+        border-radius: 7px;
+
     }
 
     .tid {
@@ -105,6 +111,11 @@ get_header();
         text-align: center;
     }
 
+    .sepodcast button {
+        background-color: white;
+        color: #DA083A;
+    }
+
 </style>
 <template>
     <article class="loopart">
@@ -114,7 +125,7 @@ get_header();
             <h2 class="titel"></h2>
             <p class="beskrivelse"></p>
         </div>
-        <H2 class="sepodcast">Se podcast</H2>
+        <a href="" class="sepodcast">Se podcast</a>
     </article>
 </template>
 
@@ -131,7 +142,7 @@ get_header();
         document.addEventListener("DOMContentLoaded", loadJSON)
         let sendeplan;
         let ugedage;
-        let filterSendeplan;
+        let filterSendeplan = 75;
 
         const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/sendeplan?per_page=100";
         const catUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/ugedage";
@@ -181,6 +192,8 @@ get_header();
                     klon.querySelector(".titel").textContent = sendeplan.title.rendered;
                     klon.querySelector(".beskrivelse").textContent = sendeplan.beskrivelse;
                     klon.querySelector(".sepodcast").textContent = sendeplan.sepodcast;
+                    klon.querySelector(".loopart a").href = sendeplan.sepodcast;
+
                     // nyt
                     dest.appendChild(klon);
                 }

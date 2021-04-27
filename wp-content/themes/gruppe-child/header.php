@@ -18,6 +18,11 @@
         right: 30px;
     }
 
+    .site-logo .custom-logo-link .custom-logo {
+        width: 45px;
+        margin-top: 9px;
+    }
+
     .site-branding-container ul {
         left: 50vw;
     }
