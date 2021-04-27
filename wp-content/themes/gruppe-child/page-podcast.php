@@ -11,6 +11,7 @@
 
 get_header();
 ?>
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -34,6 +35,9 @@ get_header();
         background-color: #04145D;
         color: white;
     }
+    #filtrering button:focus {
+        background-color: #97CDFC;
+    }
      .titel {
         font-family: 'Rubik';
         color: #DA083A;
@@ -48,6 +52,7 @@ get_header();
         bottom: 1vw;
         font-size: 0.8rem;
         padding: 1vw;
+        color: #FFFFFF;
        
     }
 
@@ -57,9 +62,8 @@ get_header();
         text-align: center;
         padding-bottom: 3vw;
         
-        
     }
-    img {
+    .podcastimg {
         padding-left: 4vw;
         width: 90%;
         height:30%;
@@ -71,12 +75,16 @@ get_header();
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2vw;  
     grid-row-gap:2vw;
-    padding: 2vw;    
+    padding: 2vw;  
+       background: conic-gradient(at 0% 20%, white 20%, ghostwhite 30%, white 50%);   
     }
     
     #holdind {
     border: 5px solid black;
+    background-color: #04145D;    
+          
     }
+    
 
     
 </style>
