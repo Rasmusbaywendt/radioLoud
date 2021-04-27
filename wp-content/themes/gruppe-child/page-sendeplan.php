@@ -35,6 +35,10 @@ get_header();
         color: white;
     }
 
+    #filtrering button:focus {
+        background-color: #04145D;
+        color: white;
+    }
 
 
     .site-content {
@@ -47,6 +51,8 @@ get_header();
         margin-left: 13vw;
         margin-right: 13vw;
     }
+
+
 
     #liste .podcastbillede {
         width: 8vw;
@@ -191,7 +197,7 @@ get_header();
                     klon.querySelector(".podcastbillede").src = sendeplan.podcastbillede.guid;
                     klon.querySelector(".titel").textContent = sendeplan.title.rendered;
                     klon.querySelector(".beskrivelse").textContent = sendeplan.beskrivelse;
-                    klon.querySelector(".sepodcast").textContent = sendeplan.sepodcast;
+                    //                    klon.querySelector(".sepodcast").textContent = sendeplan.sepodcast;
                     klon.querySelector(".loopart a").href = sendeplan.sepodcast;
 
                     // nyt
