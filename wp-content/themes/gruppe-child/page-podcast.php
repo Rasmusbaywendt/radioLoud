@@ -35,6 +35,9 @@ get_header();
         background-color: #04145D;
         color: white;
     }
+    #filtrering button:focus {
+        background-color: #97CDFC;
+    }
      .titel {
         font-family: 'Rubik';
         color: #DA083A;
