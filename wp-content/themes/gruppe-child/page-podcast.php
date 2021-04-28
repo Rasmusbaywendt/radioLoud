@@ -110,14 +110,15 @@ get_header();
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
         <div style="text-align:center;" style="display: flex" ;>
-            <nav id="filtrering"><button data-podcast="alle">ALLE</button></nav>
-            <nav id="filtrering"><button data-podcast="67">AKTUELT</button></nav>
-            <nav id="filtrering"><button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt="">CRIME</button></nav>
-            <nav id="filtrering"><button data-podcast="67"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/historie-1.svg" alt="">HISTORIE</button></nav>
-            <nav id="filtrering"><button data-podcast="73"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/KULTUR.svg" alt="">KULTUR</button></nav>
-            <nav id="filtrering"><button data-podcast="72"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/globus.svg" alt="">NYHEDER</button></nav>
-            <nav id="filtrering"><button data-podcast="70"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/handtegn.svg" alt="">UNGDOM</button></nav>
-            <nav id="filtrering"><button data-podcast="68"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund-1.svg" alt="">SAMFUND</button></nav>
+            <nav id="filtrering"><button data-podcast="alle">ALLE</button>
+                <button data-podcast="67">AKTUELT</button>
+                <button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt="">CRIME</button>
+                <button data-podcast="67"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/historie-1.svg" alt="">HISTORIE</button>
+                <button data-podcast="73"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/KULTUR.svg" alt="">KULTUR</button>
+                <button data-podcast="72"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/globus.svg" alt="">NYHEDER</button>
+                <button data-podcast="70"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/handtegn.svg" alt="">UNGDOM</button>
+                <button data-podcast="68"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund-1.svg" alt="">SAMFUND</button>
+            </nav>
 
         </div>
         <section id="podcastcontainer">
@@ -145,7 +146,7 @@ get_header();
     function opretknapper() {
 
         genre.forEach(cat => {
-            document.querySelector("#filtrering").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
+            document.querySelector("#filtrering").innerHTML
         })
         addEventListenerToButtons();
     }
