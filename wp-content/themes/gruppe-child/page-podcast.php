@@ -110,7 +110,9 @@ get_header();
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
         <div style="text-align:center;" style="display: flex" ;>
-            <nav id="filtrering"><button data-podcast="alle">Alle</button></nav>
+            <nav id="filtrering"><button data-podcast="alle">Alle</button>
+                <button data-podcast="67"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund.svg" alt=""></button>
+            </nav>
 
         </div>
         <section id="podcastcontainer">
