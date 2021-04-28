@@ -84,6 +84,16 @@ get_header();
         padding-right: 1.2vw;
 
     }
+     H1 {
+        font-family: 'Rubik';
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.7rem;
+        padding-left: 1.2vw;
+        padding-right: 1.2vw;
+
+    }
 
     .podcastimg {
         padding-left: 1.2vw;
@@ -116,8 +126,13 @@ get_header();
     }
 
     #podHead {
+        display: flex;
         background-color: #04145D;
-
+        grid-template-columns: 1fr 1fr;
+    }
+    #fontimg {
+    width: 60%;
+    height: 50%;    
     }
 
 </style>
@@ -139,9 +154,11 @@ get_header();
     <main id="main" class="site-main">
         <div style="text-align:center;" style="display: flex" ;>
            <div id="podHead">
-             <h2>PODCAST</h2>
-             <p>Find vores mange programmer, udsendelser, serier, afsnit og episoder her.</p>
-             <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
+            <div>
+             <h1>PODCAST</h1>
+                <p style="color: white";>Find vores mange programmer, udsendelser, serier, afsnit og episoder her.</p>
+                </div>
+             <img id="fontimg" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
          </div>
             <nav id="filtrering"><button data-podcast="alle">ALLE</button>
                 <button data-podcast="67">AKTUELT</button>
