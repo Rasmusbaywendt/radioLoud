@@ -58,7 +58,7 @@ get_header();
         position: relative;
         bottom: 1vw;
         font-size: 1rem;
-        
+
     }
 
     .beskrivelse {
@@ -71,7 +71,7 @@ get_header();
         font-weight: 400;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
-       overflow: hidden;
+        overflow: hidden;
     }
 
     H2 {
@@ -84,7 +84,8 @@ get_header();
         padding-right: 1.2vw;
 
     }
-     H1 {
+
+    H1 {
         font-family: 'Rubik';
         color: white;
         text-align: center;
@@ -96,12 +97,13 @@ get_header();
     }
 
     .podcastimg {
+/*
         padding-left: 1.2vw;
         padding-right: 1.2vw;
+*/
         width: 100%;
-        height: 40%;
-        border-radius: 1.5vw; 
-        
+/*        border-radius: 1.5vw;*/
+
 
     }
 
@@ -113,10 +115,11 @@ get_header();
         padding: 2vw;
         background: conic-gradient(at 0% 20%, white 20%, ghostwhite 30%, white 50%);
     }
+
     #diver {
-    border-radius: .5vw;
+        border-radius: .5vw;
     }
-    
+
     #holdind {
         background-color: #04145D;
         max-height: 50vw;
@@ -130,11 +133,13 @@ get_header();
         background-color: #04145D;
         grid-template-columns: 1fr 1fr;
     }
+
     #fontimg {
-    width: 100%;
-    height: 100%;
-    float: right;    
+        width: 100%;
+        height: 100%;
+        float: right;
     }
+
     #podtext {
         padding: 3vw;
         overflow: hidden;
@@ -142,30 +147,31 @@ get_header();
     }
 
 </style>
-    
+
 
 <!--  her starter min kode-->
 
- <template >
-     <article id="holdind">
-          <div id="diver"> <img class="podcastimg" src="" alt="" >
-         <div>
-             <h2></h2>
-             <p class="beskrivelse"></p>
-         </div></div>
-     </article>
- </template>
+<template>
+    <article id="holdind">
+        <div id="diver"> <img class="podcastimg" src="" alt="">
+            <div>
+                <h2></h2>
+                <p class="beskrivelse"></p>
+            </div>
+        </div>
+    </article>
+</template>
 
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
         <div style="text-align:center;" style="display: flex" ;>
-           <div id="podHead">
-            <div>
-             <h1>PODCAST</h1>
-                <p id="podtext" style="color: white";>Find vores mange programmer, udsendelser,<br> serier, afsnit og episoder her.</p>
+            <div id="podHead">
+                <div>
+                    <h1>PODCAST</h1>
+                    <p id="podtext" style="color: white" ;>Find vores mange programmer, udsendelser,<br> serier, afsnit og episoder her.</p>
                 </div>
-             <img id="fontimg" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
-         </div>
+                <img id="fontimg" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
+            </div>
             <nav id="filtrering"><button data-podcast="alle">ALLE</button>
                 <button data-podcast="67">AKTUELT</button>
                 <button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt="">CRIME</button>
