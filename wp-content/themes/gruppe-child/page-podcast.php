@@ -71,7 +71,7 @@ get_header();
         font-weight: 400;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
-       
+       overflow: hidden;
     }
 
     H2 {
@@ -89,7 +89,7 @@ get_header();
         padding-left: 1.2vw;
         padding-right: 1.2vw;
         width: 100%;
-        height: 30%;
+        height: 40%;
         border-radius: 1.5vw; 
         
 
@@ -104,9 +104,15 @@ get_header();
         background: conic-gradient(at 0% 20%, white 20%, ghostwhite 30%, white 50%);
     }
     #diver {
-    background-color: #04145D;
-    min-height: 70vw;
     border-radius: .5vw;
+    }
+    
+    #holdind {
+        background-color: #04145D;
+        max-height: 50vw;
+        overflow: hidden;
+        border-radius: .5vw;
+
     }
 
     #podHead {
