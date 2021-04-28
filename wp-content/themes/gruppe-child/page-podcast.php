@@ -87,12 +87,9 @@ get_header();
      H1 {
         font-family: 'Rubik';
         color: white;
-        text-align: center;
+        text-align: left;
         font-weight: 500;
-        font-size: 1.9rem;
-        padding-left: 1.2vw;
-        padding-right: 1.2vw;
-
+        font-size: 2.2rem;
     }
 
     .podcastimg {
@@ -129,16 +126,24 @@ get_header();
         display: inline-grid;
         background-color: #04145D;
         grid-template-columns: 1fr 1fr;
+        max-height: 25vw;
+        overflow:hidden;    
+
+        
     }
     #fontimg {
     width: 100%;
-    height: 100%;
-    float: right;    
+    height: 80%;
+    float: right;  
     }
     #podtext {
-        padding: 3vw;
         overflow: hidden;
-
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    #headpodtext {
+        padding-left: 6vw;
+        padding-top: 2vw;
     }
 
 </style>
@@ -160,7 +165,7 @@ get_header();
     <main id="main" class="site-main">
         <div style="text-align:center;" style="display: flex" ;>
            <div id="podHead">
-            <div>
+            <div id="headpodtext">
              <h1>PODCAST</h1>
                 <p id="podtext" style="color: white";>Find vores mange programmer, udsendelser,<br> serier, afsnit og episoder her.</p>
                 </div>
