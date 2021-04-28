@@ -24,7 +24,7 @@ get_header();
         margin: 0.4vw;
     }
 
-    #filtrering button {
+    #main button {
         font-family: 'Rubik';
         font-weight: 400;
         color: black;
