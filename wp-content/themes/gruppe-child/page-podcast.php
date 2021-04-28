@@ -18,8 +18,9 @@ get_header();
 <style>
     #filtrering {
         text-align: center;
+        height: 25%;
         position: relative;
-        top: 4vw;
+        bottom: -4vw;
     }
 
     button {
@@ -78,13 +79,13 @@ get_header();
         overflow: hidden;
     }
 
-    H2 {
+    #diver H2 {
         font-family: 'Rubik';
         color: white;
         text-align: left;
         font-weight: 500;
-        font-size: 2.5rem;
-        padding-left: 19.2vw;
+        font-size: 1.5rem;
+        padding-left: 1.2vw;
         padding-right: 1.2vw;
 
 
@@ -126,7 +127,7 @@ get_header();
         padding: 2vw;
         background: conic-gradient(at 0% 20%, white 20%, ghostwhite 30%, white 50%);
         position: relative;
-        top: 9vw;
+        top: 1vw;
 
     }
 
@@ -204,19 +205,22 @@ get_header();
         right: 45vw;
         position: relative;
         font-size: 0.7rem;
-        top: 9vw;
+        top: 11vw;
     }
 
-    <<<<<<< HEAD
-    /*
+    #podHead h2 {
+        color: white;
+        padding-left: 6.2vw;
+        font-size: 3rem;
+    }
 
-=======
->>>>>>> origin/master
+
     #headpodtext {
         padding-left: 6vw;
         padding-top: 2vw;
     }
-*/
+
+    */
 
 </style>
 <template>
