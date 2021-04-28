@@ -79,6 +79,16 @@ get_header();
         background-size: cover;
     }
 
+    .elementor-13 .elementor-element.elementor-element-a4d49a5 .elementor-button {
+        font-family: unit-rounded, sans-serif;
+        font-weight: 900;
+    }
+
+    .elementor-13 .elementor-element.elementor-element-129c0b3 .elementor-button {
+        font-family: unit-rounded, sans-serif;
+        font-weight: 900;
+    }
+
 </style>
 
 <div id="primary" class="content-area">
