@@ -35,6 +35,13 @@ get_header();
 
     }
 
+
+    #main button img {
+        height: 2vw;
+        top: 6.4;
+
+    }
+
     #filtrering button:hover {
         background-color: #04145D;
         color: white;
