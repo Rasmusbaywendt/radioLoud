@@ -79,7 +79,7 @@ get_header();
         background-size: cover;
     }
 
-    .elementor-13 .elementor-element.elementor-element-a4d49a5 .elementor-button {
+    .elementor-button span {
         font-family: unit-rounded, sans-serif;
         font-weight: 900;
     }
