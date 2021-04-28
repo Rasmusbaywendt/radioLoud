@@ -89,7 +89,7 @@ get_header();
         color: white;
         text-align: center;
         font-weight: 500;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
 
@@ -126,13 +126,19 @@ get_header();
     }
 
     #podHead {
-        display: flex;
+        display: inline-grid;
         background-color: #04145D;
         grid-template-columns: 1fr 1fr;
     }
     #fontimg {
-    width: 60%;
-    height: 50%;    
+    width: 100%;
+    height: 100%;
+    float: right;    
+    }
+    #podtext {
+        padding: 3vw;
+        overflow: hidden;
+
     }
 
 </style>
@@ -156,7 +162,7 @@ get_header();
            <div id="podHead">
             <div>
              <h1>PODCAST</h1>
-                <p style="color: white";>Find vores mange programmer, udsendelser, serier, afsnit og episoder her.</p>
+                <p id="podtext" style="color: white";>Find vores mange programmer, udsendelser,<br> serier, afsnit og episoder her.</p>
                 </div>
              <img id="fontimg" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
          </div>
