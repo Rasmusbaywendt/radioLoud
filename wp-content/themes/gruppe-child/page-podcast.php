@@ -122,6 +122,7 @@ get_header();
         max-height: 50vw;
         overflow: hidden;
         border-radius: .5vw;
+        padding-bottom: 
 
     }
 
@@ -131,20 +132,15 @@ get_header();
         grid-template-columns: 1fr 1fr;
         max-height: 25vw;
         overflow:hidden;    
-
-        
     }
 
     #fontimg {
-<<<<<<< HEAD
     width: 100%;
     height: 80%;
     float: right;  
-=======
         width: 100%;
         height: 100%;
         float: right;
->>>>>>> d88a481dd660def3defc31a03a73f78cb6b30a0b
     }
 
     #podtext {
@@ -176,17 +172,10 @@ get_header();
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
         <div style="text-align:center;" style="display: flex" ;>
-<<<<<<< HEAD
            <div id="podHead">
             <div id="headpodtext">
              <h1>PODCAST</h1>
                 <p id="podtext" style="color: white";>Find vores mange programmer, udsendelser,<br> serier, afsnit og episoder her.</p>
-=======
-            <div id="podHead">
-                <div>
-                    <h1>PODCAST</h1>
-                    <p id="podtext" style="color: white" ;>Find vores mange programmer, udsendelser,<br> serier, afsnit og episoder her.</p>
->>>>>>> d88a481dd660def3defc31a03a73f78cb6b30a0b
                 </div>
                 <img id="fontimg" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
             </div>
@@ -199,7 +188,6 @@ get_header();
                 <button data-podcast="70"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/handtegn.svg" alt="">UNGDOM</button>
                 <button data-podcast="68"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund-1.svg" alt="">SAMFUND</button>
             </nav>
-
         </div>
         <section id="podcastcontainer">
         </section>
