@@ -13,6 +13,7 @@ get_header();
 ?>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/lfd3jsr.css">
 
 <style>
     #filtrering {
@@ -24,10 +25,11 @@ get_header();
     }
 
     #filtrering button {
-        font-family: 'Rubik';
-        font-weight: 400;
         color: black;
         background: none;
+        font-family: unit-rounded, sans-serif;
+        font-weight: 700;
+        font-style: normal;
     }
 
     #filtrering button:hover {
@@ -73,9 +75,9 @@ get_header();
     .sepodcast {
         position: relative;
         top: 8vw;
-        font-family: 'Rubik';
-        font-size: 0.8rem;
-        font-weight: 600;
+        font-family: unit-rounded, sans-serif;
+        font-weight: 700;
+        font-style: normal;
         white-space: nowrap;
         color: white;
         background-color: #DA083A;
