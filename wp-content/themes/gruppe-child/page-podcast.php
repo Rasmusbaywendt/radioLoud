@@ -32,6 +32,7 @@ get_header();
         border: none;
 
         border-radius: 0.5vw;
+        height: 5vw;
 
     }
 
@@ -43,7 +44,7 @@ get_header();
     }
 
     #filtrering button:hover {
-        background-color: #04145D;
+        background-color: #7db7ea;
         color: white;
     }
 
