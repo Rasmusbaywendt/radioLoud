@@ -71,7 +71,7 @@ get_header();
         font-weight: 400;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
-        overflow: hidden;
+        padding-bottom: 1vw;
     }
 
     H2 {
@@ -119,7 +119,6 @@ get_header();
 
     #holdind {
         background-color: #04145D;
-        max-height: 50vw;
         overflow: hidden;
         border-radius: .5vw;
         padding-bottom: 
