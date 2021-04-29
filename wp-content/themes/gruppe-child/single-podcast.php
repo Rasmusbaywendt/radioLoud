@@ -93,6 +93,7 @@ get_header();
                             document.querySelector(".podcast_titel").innerHTML = podcast.title.rendered;
                             document.querySelector(".pic").src = podcast.billede.guid;
                             document.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
+                            document.querySelector(".loud_icon").href = podcast.loud_podcast_link;
 
                         }
 
