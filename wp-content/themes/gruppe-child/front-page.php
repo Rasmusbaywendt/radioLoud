@@ -51,8 +51,8 @@ get_header();
     }
 
     .elementor-13 .elementor-element.elementor-element-2fbb744>.elementor-background-overlay {
-        background-color: #433D3D;
-        opacity: 0.5;
+        background-color: black;
+        opacity: 0.3;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     }
 
