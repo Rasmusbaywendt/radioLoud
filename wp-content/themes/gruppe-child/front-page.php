@@ -50,6 +50,12 @@ get_header();
         font-style: normal;
     }
 
+    .elementor-13 .elementor-element.elementor-element-2fbb744>.elementor-background-overlay {
+        background-color: black;
+        opacity: 0.5;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    }
+
 
     /*
     p.ha-slick-subtitle {
