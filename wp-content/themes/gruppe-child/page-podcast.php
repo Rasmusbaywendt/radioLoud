@@ -18,6 +18,9 @@ get_header();
 <style>
     #filtrering {
         text-align: center;
+        height: 25%;
+        position: relative;
+        bottom: -4vw;
     }
 
     button {
@@ -64,24 +67,67 @@ get_header();
     .beskrivelse {
         font-family: 'Quicksand', sans-serif;
         position: relative;
-        bottom: 1vw;
+        bottom: 4vw;
         font-size: 0.8rem;
         color: #FFFFFF;
-
         font-weight: 400;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
+
+
+
         overflow: hidden;
     }
 
-    H2 {
+    #diver H2 {
         font-family: 'Rubik';
         color: white;
         text-align: left;
         font-weight: 500;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
+
+
+        padding-bottom: 3vw;
+
+    }
+
+
+    /*
+
+    .podcastimg {
+        padding-left: 1.2vw;
+        padding-right: 1.2vw;
+        width: 69%;
+        height: 100%;
+        border-radius: 1.5vw;
+        position: relative;
+        left: 16vw;
+        float: right;
+
+
+    }
+*/
+
+
+    #podtext {
+        padding: 0;
+        right: -79px;
+        position: relative;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    #podcastcontainer {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2vw;
+        grid-row-gap: 2vw;
+        padding: 2vw;
+        background: conic-gradient(at 0% 20%, white 20%, ghostwhite 30%, white 50%);
+        position: relative;
+        top: 1vw;
 
     }
 
@@ -93,13 +139,14 @@ get_header();
         font-size: 2.2rem;
     }
 
+
     .podcastimg {
-/*
+        /*
         padding-left: 1.2vw;
         padding-right: 1.2vw;
 */
         width: 100%;
-/*        border-radius: 1.5vw;*/
+        /*        border-radius: 1.5vw;*/
 
 
     }
@@ -122,7 +169,7 @@ get_header();
         max-height: 50vw;
         overflow: hidden;
         border-radius: .5vw;
-        padding-bottom: 
+        padding-bottom:
 
     }
 
@@ -130,34 +177,52 @@ get_header();
         display: inline-grid;
         background-color: #04145D;
         grid-template-columns: 1fr 1fr;
-        max-height: 25vw;
-        overflow:hidden;    
+        max-height: 23vw;
+        overflow: hidden;
+
     }
 
+
+    #podHead img {
+        top: -15vw;
+        left: 65vw;
+        width: 83%;
+    }
+
+
+
     #fontimg {
-    width: 100%;
-    height: 80%;
-    float: right;  
+        width: 100%;
+        height: 80%;
+        float: right;
         width: 100%;
         height: 100%;
         float: right;
     }
 
-    #podtext {
-        overflow: hidden;
-        font-size: 1.2rem;
-        text-align: left;
+    h6 {
+        color: white;
+        right: 45vw;
+        position: relative;
+        font-size: 0.7rem;
+        top: 11vw;
     }
+
+    #podHead h2 {
+        color: white;
+        padding-left: 6.2vw;
+        font-size: 3rem;
+    }
+
+
     #headpodtext {
         padding-left: 6vw;
         padding-top: 2vw;
     }
 
+    */
+
 </style>
-
-
-<!--  her starter min kode-->
-
 <template>
     <article id="holdind">
         <div id="diver"> <img class="podcastimg" src="" alt="">
@@ -172,27 +237,27 @@ get_header();
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
         <div style="text-align:center;" style="display: flex" ;>
-           <div id="podHead">
-            <div id="headpodtext">
-             <h1>PODCAST</h1>
-                <p id="podtext" style="color: white";>Find vores mange programmer, udsendelser,<br> serier, afsnit og episoder her.</p>
-                </div>
-                <img id="fontimg" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
+            <div id="podHead">
+                <h2>PODCAST</h2>
+                <h6>Find vores mange programmer, udsendelser, serier, afsnit og episoder her.
+                </h6>
+                <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
             </div>
-            <nav id="filtrering"><button data-podcast="alle">ALLE</button>
-                <button data-podcast="67">AKTUELT</button>
-                <button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt="">CRIME</button>
-                <button data-podcast="67"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/historie-1.svg" alt="">HISTORIE</button>
-                <button data-podcast="73"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/KULTUR.svg" alt="">KULTUR</button>
-                <button data-podcast="72"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/globus.svg" alt="">NYHEDER</button>
-                <button data-podcast="70"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/handtegn.svg" alt="">UNGDOM</button>
-                <button data-podcast="68"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund-1.svg" alt="">SAMFUND</button>
+            <nav id="filtrering"><button data-podcast="alle">Alle</button> <button data-podcast="67"> AKTUELT </button>
+                <button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt=""> CRIME </button> <button data-podcast="67"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/historie-1.svg" alt=""> HISTORIE </button> <button data-podcast="73"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/KULTUR.svg" alt=""> KULTUR </button>
+                <button data-podcast="72"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/globus.svg" alt=""> NYHEDER </button> <button data-podcast="70"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/handtegn.svg" alt="">UNGDOM</button> <button data-podcast="68"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund-1.svg" alt="">SAMFUND
+                </button>
             </nav>
+
         </div>
         <section id="podcastcontainer">
         </section>
     </main> <!-- #main -->
 </section> <!-- #primary -->
+
+
+
+
 
 <script>
     let podcasts;
@@ -209,10 +274,10 @@ get_header();
         console.log(genre);
         visPodcasts();
         opretknapper();
-    }
+    };
+
 
     function opretknapper() {
-
         genre.forEach(cat => {
             document.querySelector("#filtrering").innerHTML
         })
@@ -225,11 +290,17 @@ get_header();
         })
     };
 
+
+
     function filtrering() {
         filterPodcast = this.dataset.podcast;
         console.log(filterPodcast);
         visPodcasts();
+
     }
+
+
+
 
     function visPodcasts() {
         let temp = document.querySelector("template");
@@ -242,19 +313,18 @@ get_header();
                 klon.querySelector("h2").textContent = podcast.title.rendered;
                 klon.querySelector(".podcastimg").src = podcast.billede.guid;
                 klon.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
-                //                     klon.querySelector(".pris").textContent = ret.pris;
                 klon.querySelector("article").addEventListener("click", () => {
                     location.href = podcast.link;
                 })
                 container.appendChild(klon);
-
             }
         })
     }
 
+
+
     getJson();
 
 </script>
-
 <?php
 get_footer();
