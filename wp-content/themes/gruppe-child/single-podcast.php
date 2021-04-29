@@ -25,7 +25,22 @@ get_header();
                         <article class="aktuel_podcast">
                             <div class="beskrivelse_div">
                                 <h1 class="podcast_titel"></h1>
-                                <p class="langbeskrivelse"></p>
+                                <p class="beskrivelse"></p>
+                                <div class="icon_div">
+
+                                    <h3>Lyt til podcastet her!</h3>
+
+                                    <a class="loud_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/loud_png.png" alt="play-button"></a>
+
+                                    <a class="itunes_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/apple_png.png"></a>
+
+                                    <a class="spotify_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/spotify_png.png" alt="play-button"></a>
+
+                                    <a class="google_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/google_png.png" alt="play-button"></a>
+
+                                    <a class="podimo_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/podimo_png.png" alt="play-button"></a>
+                                </div>
+
                             </div>
                             <img class="pic" src="" alt="">
 
@@ -36,7 +51,11 @@ get_header();
                                 <article>
                                     <div class="episode_grid">
                                         <h3 class="episode_titel"></h3>
-                                        <img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/play_circle.png" alt=" play-button">
+                                        <a class="loud_lyd" href="">
+                                            <img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/loud-logo.png" alt="play-button">
+
+
+                                        </a>
                                         <h4 class="episode_dato"></h4>
                                     </div>
                                 </article>
@@ -73,7 +92,8 @@ get_header();
                             console.log("visPodcasts");
                             document.querySelector(".podcast_titel").innerHTML = podcast.title.rendered;
                             document.querySelector(".pic").src = podcast.billede.guid;
-                            document.querySelector(".langbeskrivelse").innerHTML = podcast.langbeskrivelse;
+                            document.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
+                            document.querySelector(".loud_icon").href = podcast.loud_podcast_link;
 
                         }
 
@@ -91,6 +111,7 @@ get_header();
                                     let klon = temp.cloneNode(true).content;
                                     klon.querySelector(".episode_titel").textContent = episode.title.rendered;
                                     klon.querySelector(".episode_dato").textContent = episode.dato;
+                                    klon.querySelector(".loud_lyd").href = episode.loud_link;
                                     container.appendChild(klon);
                                 }
 
@@ -107,9 +128,9 @@ get_header();
                 <!-- #primary -->
             </main>
             <!-- #main -->
+
         </div>
         <!-- #primary -->
     </div>
-    <!-- #primary -->
     <?php
 get_footer();
