@@ -19,7 +19,7 @@
     }
 
     .site-logo .custom-logo-link .custom-logo {
-        width: 45px;
+        width: 55px;
         margin-top: 9px;
     }
 
@@ -32,11 +32,34 @@
         padding: 6px 15px;
         margin-left: 5px;
         background-color: #DC0B3A;
+        color: white;
+    }
+
+    .main-navigation .main-menu>li>a:hover {
+        color: none;
+    }
+
+    a:hover {
+        color: none;
+
     }
 
     .main-navigation .main-menu>li:last-child>a,
     .main-navigation .main-menu>li:last-child.menu-item-has-children .submenu-expand {
         color: white;
+    }
+
+    svg {
+        width: 2.3vw;
+        height: 2.3vw;
+        position: relative;
+        top: 0.4vw;
+        left: 1.1vw;
+    }
+
+    .site-logo:hover {
+        color: white;
+        box-shadow: none;
     }
 
 </style>

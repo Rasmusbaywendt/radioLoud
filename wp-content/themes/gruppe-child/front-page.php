@@ -57,6 +57,17 @@ get_header();
     }
 
 
+    .site-logo:hover {
+        color: white;
+        box-shadow: none;
+    }
+
+    .site-logo .custom-logo-link {
+        box-shadow: none;
+
+    }
+
+
     /*
     p.ha-slick-subtitle {
     line-height: 1.8rem;
