@@ -201,14 +201,16 @@ get_header();
     }
 
     h6 {
+        font-family: 'Quicksand', sans-serif;
         color: white;
         right: 45vw;
         position: relative;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         top: 11vw;
     }
 
     #podHead h2 {
+        font-family: 'Rubik';
         color: white;
         padding-left: 6.2vw;
         font-size: 3rem;
