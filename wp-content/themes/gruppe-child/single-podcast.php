@@ -102,12 +102,7 @@ get_header();
                             let temp = document.querySelector("template");
                             console.log(aktuelpodcast);
                             episoder.forEach(episode => {
-                                console.log("Im at: ", episode.horer_til_podcast);
-                                const horer = episode.horer_til_podcast[0].id;
-                                console.log("tyeeew", horer);
-
-                                if (horer == aktuelpodcast) {
-                                    console.log("i pass if")
+                                if (episode.horer_til_podcast == aktuelpodcast) {
                                     let klon = temp.cloneNode(true).content;
                                     klon.querySelector(".episode_titel").textContent = episode.title.rendered;
                                     klon.querySelector(".episode_dato").textContent = episode.dato;
