@@ -227,7 +227,7 @@ get_header();
 </style>
 <template>
     <article id="holdind">
-        <div id="diver"> <img class="podcastimg" src="" alt="">
+        <div id="diver"> <img class="podcastimg" src="" alt="podcastimg">
             <div>
                 <h2></h2>
                 <p class="beskrivelse"></p>
@@ -243,7 +243,7 @@ get_header();
                 <h2>PODCAST</h2>
                 <h6>Find vores mange programmer, udsendelser, serier, afsnit og episoder her.
                 </h6>
-                <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
+                <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="train_boy">
             </div>
             <nav id="filtrering"><button data-podcast="alle">Alle</button> <button data-podcast="67"> AKTUELT </button>
                 <button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt="crime_icon"> CRIME </button> <button data-podcast="67"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/historie-1.svg" alt="historie_icon"> HISTORIE </button> <button data-podcast="73"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/KULTUR.svg" alt="kultur_icon"> KULTUR </button>
