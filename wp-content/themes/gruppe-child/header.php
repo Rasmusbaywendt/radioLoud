@@ -48,6 +48,25 @@
         box-shadow: none;
     }
 
+    /*    Hover på a links */
+    #menu-menu a:hover {
+        color: #DC0B3A;
+    }
+
+
+    /*Hover på loud live knap*/
+    #menu-item-1291 a:hover {
+        color: white;
+    }
+
+    #menu-item-1291 a {
+        color: white;
+    }
+
+    #menu-item-1291 a:hover {
+        color: black;
+    }
+
 </style>
 <!doctype html>
 <html <?php language_attributes(); ?>>
