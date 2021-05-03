@@ -12,6 +12,12 @@
  */
 ?>
 <style>
+    .site-header {
+        z-index: 100;
+        position: sticky;
+        top: 0;
+    }
+
     .site-logo {
         top: -16px;
         border-radius: 0%;
