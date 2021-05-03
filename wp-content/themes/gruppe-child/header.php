@@ -35,20 +35,6 @@
         color: white;
     }
 
-    .main-navigation .main-menu>li>a:hover {
-        color: none;
-    }
-
-    a:hover {
-        color: none;
-
-    }
-
-    .main-navigation .main-menu>li:last-child>a,
-    .main-navigation .main-menu>li:last-child.menu-item-has-children .submenu-expand {
-        color: white;
-    }
-
     svg {
         width: 2.3vw;
         height: 2.3vw;
