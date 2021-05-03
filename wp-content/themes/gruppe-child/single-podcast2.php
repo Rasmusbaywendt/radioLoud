@@ -12,47 +12,47 @@
 get_header();
 ?>
 
-    <section id="primary" class="content-area">
-        <main id="main" class="site-main">
+<section id="primary" class="content-area">
+    <main id="main" class="site-main">
 
-            <article>
+        <article>
 
-                <img class="pic" src="" alt="">
-                <div>
-                    <h1></h1>
-                    <p class="beskrivelse"></p>
-                </div>
+            <img class="pic" src="" alt="podcastimage">
+            <div>
+                <h1></h1>
+                <p class="beskrivelse"></p>
+            </div>
 
-            </article>
-        </main>
-        <!-- #main -->
+        </article>
+    </main>
+    <!-- #main -->
 
-        <script>
-            let podcast;
-            const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast/" + <?php echo get_the_ID() ?>;
+    <script>
+        let podcast;
+        const dbUrl = "http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-json/wp/v2/podcast/" + <?php echo get_the_ID() ?>;
 
-            async function getJson() {
-                const data = await fetch(dbUrl);
-                podcast = await data.json();
+        async function getJson() {
+            const data = await fetch(dbUrl);
+            podcast = await data.json();
 
-                visPodcasts();
-            }
+            visPodcasts();
+        }
 
 
-            function visPodcasts() {
-                console.log("visPodcasts");
-                document.querySelector("h1").innerHTML = podcast.title.rendered;
-                document.querySelector(".pic").src = podcast.billede.guid;
-                document.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
+        function visPodcasts() {
+            console.log("visPodcasts");
+            document.querySelector("h1").innerHTML = podcast.title.rendered;
+            document.querySelector(".pic").src = podcast.billede.guid;
+            document.querySelector(".beskrivelse").innerHTML = podcast.beskrivelse;
 
-            }
+        }
 
-            getJson();
+        getJson();
 
-        </script>
+    </script>
 
-    </section>
-    <!-- #primary -->
+</section>
+<!-- #primary -->
 
-    <?php
+<?php
 get_footer();
