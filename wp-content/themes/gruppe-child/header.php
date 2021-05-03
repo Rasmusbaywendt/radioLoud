@@ -12,6 +12,12 @@
  */
 ?>
 <style>
+    .site-header {
+        z-index: 100;
+        position: sticky;
+        top: 0;
+    }
+
     .site-logo {
         top: -16px;
         border-radius: 0%;
@@ -46,6 +52,31 @@
     .site-logo:hover {
         color: white;
         box-shadow: none;
+    }
+
+    .site-title a {
+        display: none;
+
+    }
+
+    /*    Hover på a links */
+    #menu-menu a:hover {
+        color: #DC0B3A;
+    }
+
+
+    /*Hover på loud live knap*/
+    #menu-item-1291 a:hover {
+        color: white;
+    }
+
+    /*    loud live knap - farve på tekst og hovereffekt*/
+    #menu-item-1291 a {
+        color: white;
+    }
+
+    #menu-item-1291 a:hover {
+        color: black;
     }
 
 </style>
