@@ -48,6 +48,11 @@
         box-shadow: none;
     }
 
+    .site-title a {
+        display: none;
+
+    }
+
     /*    Hover på a links */
     #menu-menu a:hover {
         color: #DC0B3A;
@@ -59,6 +64,7 @@
         color: white;
     }
 
+    /*    loud live knap - farve på tekst og hovereffekt*/
     #menu-item-1291 a {
         color: white;
     }
