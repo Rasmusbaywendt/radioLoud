@@ -228,22 +228,22 @@ get_header();
     display: inline-grid;
     background-color: #04145D;
     grid-template-columns: 1fr;
-    max-height: 23vw;
+    min-height: 90vw;
     overflow: hidden;
 }
     #podHead h2 {
     font-family: 'Rubik';
     color: white;
     padding-left: .7vw;
-    font-size: 3rem;
+    font-size: 2rem;
 }
     h6 {
     font-family: 'Quicksand', sans-serif;
     color: white;
-    right: 45vw;
+    right: 2vw;
     position: relative;
     font-size: 0.8rem;
-    top: 11vw;
+    top: 1vw;
 }
     #main button {
     font-family: 'Rubik';
@@ -263,6 +263,29 @@ get_header();
     padding-left: 1.2vw;
     padding-right: 1.2vw;
     padding-bottom: 3vw;
+}
+    #filtrering {
+    text-align: center;
+    height: 30%;
+    position: relative;
+    bottom: -4vw;
+}
+    
+    #main button img {
+    height: 4.8vw;
+    top: auto;
+}
+    #podcastcontainer {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2vw;
+    grid-row-gap: 2vw;
+    padding: 2vw;
+}
+    #podHead img {
+    top: 1vw;
+    left: 9vw;
+    width: 83%;
 }
 }
     
