@@ -78,6 +78,22 @@
     #menu-item-1291 a:hover {
         color: black;
     }
+    
+    @media only screen and (max-width: 780px) {
+        .site-logo {
+    position: relative;
+    z-index: 999;
+    margin-bottom: calc(.66 * 1rem);
+    right: 0px;
+    top: auto;
+
+}
+    .site-logo .custom-logo-link .custom-logo {
+    width: 55px;
+    margin-top: 0px;
+    height: auto;    
+}
+    }
 
 </style>
 <!doctype html>
