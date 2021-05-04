@@ -222,7 +222,50 @@ get_header();
         padding-top: 2vw;
     }
 
-    */
+@media only screen and (max-width: 780px) {
+  
+    #podHead {
+    display: inline-grid;
+    background-color: #04145D;
+    grid-template-columns: 1fr;
+    max-height: 23vw;
+    overflow: hidden;
+}
+    #podHead h2 {
+    font-family: 'Rubik';
+    color: white;
+    padding-left: .7vw;
+    font-size: 3rem;
+}
+    h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    right: 45vw;
+    position: relative;
+    font-size: 0.8rem;
+    top: 11vw;
+}
+    #main button {
+    font-family: 'Rubik';
+    font-weight: 400;
+    color: black;
+    background-color: #97CDFC;
+    border: none;
+    border-radius: 0.5vw;
+    height: 12vw;
+}
+    #diver H2 {
+    font-family: 'Rubik';
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    font-size: .5rem;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-bottom: 3vw;
+}
+}
+    
 
 </style>
 <template>
