@@ -101,6 +101,17 @@ get_header();
         font-weight: 900;
     }
 
+
+    .elementor-13 .elementor-element.elementor-element-d62cabe .slick-prev,
+    .elementor-13 .elementor-element.elementor-element-d62cabe .slick-next {
+        z-index: 30;
+    }
+
+    .elementor-13 .elementor-element.elementor-element-be97253 .slick-prev,
+    .elementor-13 .elementor-element.elementor-element-be97253 .slick-next {
+        z-index: 30;
+    }
+
 </style>
 
 <div id="primary" class="content-area">
