@@ -47,12 +47,12 @@ get_header();
     }
 
     #filtrering button:hover {
-        background-color: #7db7ea;
+        background-color: #04145D;
         color: white;
     }
 
     #filtrering button:focus {
-        background-color: #97CDFC;
+        background-color: deepskyblue;
     }
 
     .titel {
@@ -94,23 +94,7 @@ get_header();
     }
 
 
-    /*
-
-    .podcastimg {
-        padding-left: 1.2vw;
-        padding-right: 1.2vw;
-        width: 69%;
-        height: 100%;
         border-radius: 1.5vw;
-        position: relative;
-        left: 16vw;
-        float: right;
-
-
-    }
-*/
-
-
     #podtext {
         padding: 0;
         right: -79px;
@@ -141,14 +125,7 @@ get_header();
 
 
     .podcastimg {
-        /*
-        padding-left: 1.2vw;
-        padding-right: 1.2vw;
-*/
         width: 100%;
-        /*        border-radius: 1.5vw;*/
-
-
     }
 
     #podcastcontainer {
@@ -182,13 +159,11 @@ get_header();
 
     }
 
-
     #podHead img {
         top: -15vw;
         left: 65vw;
         width: 83%;
     }
-
 
 
     #fontimg {
@@ -228,7 +203,7 @@ get_header();
     display: inline-grid;
     background-color: #04145D;
     grid-template-columns: 1fr;
-    min-height: 90vw;
+    min-height: 120vw;
     overflow: hidden;
 }
     #podHead h2 {
@@ -240,7 +215,7 @@ get_header();
     h6 {
     font-family: 'Quicksand', sans-serif;
     color: white;
-    right: 2vw;
+    right: 1vw;
     position: relative;
     font-size: 0.8rem;
     top: 1vw;
@@ -286,6 +261,7 @@ get_header();
     top: 1vw;
     left: 9vw;
     width: 83%;
+    min-height: 60vw;
 }
 }
     
@@ -311,7 +287,7 @@ get_header();
                 </h6>
                 <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="train_boy">
             </div>
-            <nav id="filtrering"><button data-podcast="alle">Alle</button> <button data-podcast="67"> AKTUELT </button>
+            <nav id="filtrering"><button data-podcast="alle">ALLE</button> <button data-podcast="67"> AKTUELT </button>
                 <button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt="crime_icon"> CRIME </button> <button data-podcast="67"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/historie-1.svg" alt="historie_icon"> HISTORIE </button> <button data-podcast="73"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/KULTUR.svg" alt="kultur_icon"> KULTUR </button>
                 <button data-podcast="72"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/globus.svg" alt="nyheder_icon"> NYHEDER </button> <button data-podcast="70"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/handtegn.svg" alt="ungdom_icon">UNGDOM</button> <button data-podcast="68"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund-1.svg" alt="samfund_icon">SAMFUND
                 </button>
