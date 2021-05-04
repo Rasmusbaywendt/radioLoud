@@ -17,11 +17,15 @@ get_header();
 
 <style>
     #filtrering button {
+
         color: black;
         background: none;
         font-family: unit-rounded, sans-serif;
         font-weight: 700;
         font-style: normal;
+        font-size: 0.6rem;
+        padding: 9px;
+        margin: 1.5px;
     }
 
     #filtrering button:hover {
@@ -136,6 +140,11 @@ get_header();
             font-family: unit-rounded, sans-serif;
             font-weight: 700;
             font-style: normal;
+            font-size: 1rem;
+            padding: 10px;
+            margin: 16;
+
+
         }
 
         #filtrering button:hover {
@@ -236,45 +245,6 @@ get_header();
             color: #DA083A;
         }
     }
-
-
-    /*
-    @media only screen and (min-width: 480px) {
-        #filtrering {
-            text-align: center;
-        }
-
-        .tid {
-            font-family: 'Rubik';
-            color: #DA083A;
-            position: relative;
-            top: 2vw;
-            font-size: 1rem;
-            right: 8vw;
-        }
-
-        #liste .podcastbillede {
-            width: 10vw;
-            height: 8vw;
-            border-radius: 50%;
-            margin-left: -6vw;
-            margin-right: 2vw;
-            margin-top: 40vw;
-        }
-
-        .beskrivelse {
-            font-family: 'Quicksand', sans-serif;
-            position: relative;
-            bottom: 3vw;
-            padding-right: 4vw;
-            font-size: 0.8rem;
-
-            display: none;
-
-        }
-
-    }
-*/
 
 </style>
 <template>
