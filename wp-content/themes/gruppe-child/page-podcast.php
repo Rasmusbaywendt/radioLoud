@@ -196,7 +196,7 @@ get_header();
         padding-top: 2vw;
     }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 600px) {
   
     #podHead {
     display: inline-grid;
@@ -242,7 +242,8 @@ get_header();
     text-align: center;
     height: 30%;
     position: relative;
-    bottom: -4vw;
+    bottom: 6vw;
+    padding-top: 6vw;
 }
     
     #main button img {
