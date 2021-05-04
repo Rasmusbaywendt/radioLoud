@@ -93,6 +93,14 @@
     margin-top: 0px;
     height: auto;    
 }
+        .site-logo .custom-logo-link {
+    border-radius: 100%;
+    box-sizing: content-box;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: box-shadow 200ms ease-in-out;
+}
     }
 
 </style>
