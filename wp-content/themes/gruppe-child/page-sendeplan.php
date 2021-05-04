@@ -250,7 +250,7 @@ get_header();
 <template>
     <article class="loopart">
         <h2 class="tid"></h2>
-        <img src="" alt="podcastbillede" class="podcastbillede">
+        <img src="" alt="podcast_billede" class="podcastbillede">
         <div class="tekst">
             <h2 class="titel"></h2>
             <p class="beskrivelse"></p>

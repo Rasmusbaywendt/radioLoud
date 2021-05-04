@@ -12,6 +12,12 @@
  */
 ?>
 <style>
+    .site-header {
+        z-index: 100;
+        position: sticky;
+        top: 0;
+    }
+
     .site-logo {
         top: -16px;
         border-radius: 0%;
@@ -46,6 +52,55 @@
     .site-logo:hover {
         color: white;
         box-shadow: none;
+    }
+
+    .site-title a {
+        display: none;
+
+    }
+
+    /*    Hover på a links */
+    #menu-menu a:hover {
+        color: #DC0B3A;
+    }
+
+
+    /*Hover på loud live knap*/
+    #menu-item-1291 a:hover {
+        color: white;
+    }
+
+    /*    loud live knap - farve på tekst og hovereffekt*/
+    #menu-item-1291 a {
+        color: white;
+    }
+
+    #menu-item-1291 a:hover {
+        color: black;
+    }
+    
+    @media only screen and (max-width: 780px) {
+        .site-logo {
+    position: relative;
+    z-index: 999;
+    margin-bottom: calc(.66 * 1rem);
+    right: 0px;
+    top: auto;
+
+}
+    .site-logo .custom-logo-link .custom-logo {
+    width: 55px;
+    margin-top: 0px;
+    height: auto;    
+}
+        .site-logo .custom-logo-link {
+    border-radius: 100%;
+    box-sizing: content-box;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: box-shadow 200ms ease-in-out;
+}
     }
 
 </style>
