@@ -112,6 +112,21 @@ get_header();
         z-index: 30;
     }
 
+    @media screen and (max-width: 600px) {
+
+        /*Pile i billede karousel*/
+        .elementor-13 .elementor-element.elementor-element-d62cabe .slick-prev,
+        .elementor-13 .elementor-element.elementor-element-d62cabe .slick-next {
+            top: 150px;
+        }
+
+        .elementor-13 .elementor-element.elementor-element-be97253 .slick-prev,
+        .elementor-13 .elementor-element.elementor-element-be97253 .slick-next {
+            top: 150px;
+        }
+
+    }
+
 </style>
 
 <div id="primary" class="content-area">
