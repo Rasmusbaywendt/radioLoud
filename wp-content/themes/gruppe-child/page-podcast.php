@@ -94,7 +94,6 @@ get_header();
     }
 
 
-        border-radius: 1.5vw;
     #podtext {
         padding: 0;
         right: -79px;
