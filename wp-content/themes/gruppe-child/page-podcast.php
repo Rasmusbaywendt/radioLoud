@@ -348,11 +348,10 @@ get_header();
     width: 83%;
     min-height: 60vw;
 }
-    
 
 #holdind {
     background-color: #04145D;
-    max-height: 70vw;
+    max-height: 118vw;
     overflow: hidden;
     border-radius: .5vw;
     padding-bottom: 2vw;
