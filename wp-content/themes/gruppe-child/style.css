@@ -151,7 +151,7 @@ a {
     padding: 0.8vw;
 }
 @media (max-width: 940px) {
-    img {
+    .single_podcast img {
         max-width: 100%
     }
     .aktuel_podcast {
