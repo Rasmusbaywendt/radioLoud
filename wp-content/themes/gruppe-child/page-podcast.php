@@ -196,7 +196,6 @@ get_header();
         padding-top: 2vw;
     }
 
-<<<<<<< Updated upstream
     @media only screen and (max-width: 600px) {
 
         #podHead {
@@ -280,7 +279,7 @@ get_header();
             padding-bottom: ;
         }
     }
-=======
+    
 @media only screen and (max-width: 600px) {
   
     #podHead {
@@ -316,12 +315,12 @@ get_header();
     #diver H2 {
     font-family: 'Rubik';
     color: white;
-    text-align: left;
+    text-align: center;
     font-weight: 500;
-    font-size: .5rem;
+font-size: 1.5rem;
     padding-left: 1.2vw;
     padding-right: 1.2vw;
-    padding-bottom: 3vw;
+    padding-bottom: 30vw;
 }
     #filtrering {
     text-align: center;
@@ -351,7 +350,7 @@ get_header();
 
 #holdind {
     background-color: #04145D;
-    max-height: 118vw;
+    max-height: 132vw;
     overflow: hidden;
     border-radius: .5vw;
     padding-bottom: 2vw;
@@ -375,13 +374,75 @@ get_header();
         
 }
     #podHead img {
-    padding-top: 12vw;
-    left: 25vw;
+    padding-top: 10vw;
+    left: 55vw;
     width: 83%;
 }
-    }
+        #podHead h2 {
+    font-family: 'Rubik';
+    color: white;
+    padding-left: 6.2vw;
+    font-size: 5rem;
+}
+        h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    right: 45vw;
+    position: relative;
+    font-size: 1.9rem;
+    top: 11vw;
+}
+    #main button img {
+    height: 2.2vw;
+    top: auto;
+}
+    #filtrering {
+    text-align: center;
+    height: 20%;
+    position: relative;
+}
+    #main button {
+    font-family: 'Rubik';
+    font-weight: 400;
+    color: black;
+    background-color: #97CDFC;
+    border: none;
+    border-radius: 0.5vw;
+    height: 4vw;
+    font-size: 1.8em;    
+}
+    #podcastcontainer {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+    grid-row-gap: 2vw;
+    padding: 2vw;
+}
+    #diver H2 {
+    font-family: 'Rubik';
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    font-size: 2.4rem;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-bottom: 3vw;
+}
+    .beskrivelse {
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    bottom: 2vw;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    overflow: hidden;
+}
+        
+        
+}
     
->>>>>>> Stashed changes
 
 </style>
 <template>
