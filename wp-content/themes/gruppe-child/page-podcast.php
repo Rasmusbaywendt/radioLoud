@@ -196,6 +196,7 @@ get_header();
         padding-top: 2vw;
     }
 
+<<<<<<< Updated upstream
     @media only screen and (max-width: 600px) {
 
         #podHead {
@@ -279,6 +280,109 @@ get_header();
             padding-bottom: ;
         }
     }
+=======
+@media only screen and (max-width: 600px) {
+  
+    #podHead {
+    display: inline-grid;
+    background-color: #04145D;
+    grid-template-columns: 1fr;
+    min-height: 120vw;
+    overflow: hidden;
+}
+    #podHead h2 {
+    font-family: 'Rubik';
+    color: white;
+    padding-left: .7vw;
+    font-size: 2rem;
+}
+    h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    right: 1vw;
+    position: relative;
+    font-size: 0.8rem;
+    top: 1vw;
+}
+    #main button {
+    font-family: 'Rubik';
+    font-weight: 400;
+    color: black;
+    background-color: #97CDFC;
+    border: none;
+    border-radius: 0.5vw;
+    height: 12vw;
+}
+    #diver H2 {
+    font-family: 'Rubik';
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    font-size: .5rem;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-bottom: 3vw;
+}
+    #filtrering {
+    text-align: center;
+    height: 30%;
+    position: relative;
+    bottom: 6vw;
+    padding-top: 6vw;
+}
+    
+    #main button img {
+    height: 4.8vw;
+    top: auto;
+}
+    #podcastcontainer {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    column-gap: 2vw;
+    grid-row-gap: 2vw;
+    padding: 2vw;
+}
+    #podHead img {
+    top: 1vw;
+    left: 9vw;
+    width: 83%;
+    min-height: 60vw;
+}
+    
+
+#holdind {
+    background-color: #04145D;
+    max-height: 70vw;
+    overflow: hidden;
+    border-radius: .5vw;
+    padding-bottom: 2vw;
+
+}
+    #diver {
+    border-radius: .5vw;
+}
+    
+}
+
+    @media only screen and (min-width: 3000px) {
+        
+    #podHead {
+    display: inline-grid;
+    background-color: #04145D;
+    grid-template-columns: 1fr 1fr;
+    max-height: 30vw;
+    overflow: visible;
+    width: 100%;
+        
+}
+    #podHead img {
+    padding-top: 12vw;
+    left: 25vw;
+    width: 83%;
+}
+    }
+    
+>>>>>>> Stashed changes
 
 </style>
 <template>
