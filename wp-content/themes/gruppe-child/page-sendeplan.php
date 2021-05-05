@@ -16,20 +16,16 @@ get_header();
 <link rel="stylesheet" href="https://use.typekit.net/lfd3jsr.css">
 
 <style>
-    #filtrering {
-        text-align: center;
-    }
-
-    button {
-        margin: 0.4vw;
-    }
-
     #filtrering button {
+
         color: black;
         background: none;
         font-family: unit-rounded, sans-serif;
         font-weight: 700;
         font-style: normal;
+        font-size: 0.6rem;
+        padding: 9px;
+        margin: 1.5px;
     }
 
     #filtrering button:hover {
@@ -42,57 +38,29 @@ get_header();
         color: white;
     }
 
-
     .site-content {
         background-color: #98CEFD;
 
     }
 
-    .loopart {
-        display: flex;
-        margin-left: 13vw;
-        margin-right: 13vw;
-    }
-
-
-
     #liste .podcastbillede {
-        width: 8vw;
-        height: 8vw;
+        width: 14vw;
+        height: 16vw;
         border-radius: 50%;
-        margin-left: 2vw;
+        margin-left: 80vw;
         margin-right: 2vw;
-        margin-top: 5vw;
+        margin-top: -10vw;
     }
 
-    .tekst {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 1vw;
-    }
-
-    .sepodcast {
-        position: relative;
-        top: 8vw;
-        font-family: unit-rounded, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        white-space: nowrap;
-        color: white;
-        background-color: #DA083A;
-        height: 5%;
-        padding: 9px 16px;
-        border-radius: 7px;
-
-    }
 
     .tid {
         font-family: 'Rubik';
         color: #DA083A;
         position: relative;
-        top: 2vw;
+        top: 38vw;
         font-size: 1rem;
+        left: 2vw;
+
     }
 
     .titel {
@@ -101,13 +69,16 @@ get_header();
         position: relative;
         bottom: 1vw;
         font-size: 1rem;
+        left: 18vw;
     }
 
     .beskrivelse {
         font-family: 'Quicksand', sans-serif;
         position: relative;
         bottom: 3vw;
-        padding-right: 4vw;
+        padding-right: 18vw;
+        padding-left: 18vw;
+
         font-size: 0.8rem;
 
 
@@ -124,11 +95,162 @@ get_header();
         color: #DA083A;
     }
 
+    img {
+        position: relative;
+        top: 39vw;
+    }
+
+    .sepodcast {
+        position: relative;
+        top: 0vw;
+        font-family: unit-rounded, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        white-space: nowrap;
+        color: white;
+        background-color: #DA083A;
+        height: 5%;
+        padding: 9px 16px;
+        border-radius: 7px;
+        left: 17vw;
+
+    }
+
+
+
+    @media only screen and (min-width: 600px) {
+
+        img {
+            position: relative;
+            top: 0;
+        }
+
+
+        #filtrering {
+            text-align: center;
+        }
+
+        button {
+            margin: 0.4vw;
+        }
+
+        #filtrering button {
+            color: black;
+            background: none;
+            font-family: unit-rounded, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1rem;
+            padding: 10px;
+            margin: 16;
+
+
+        }
+
+        #filtrering button:hover {
+            background-color: #04145D;
+            color: white;
+        }
+
+        #filtrering button:focus {
+            background-color: #04145D;
+            color: white;
+        }
+
+
+        .site-content {
+            background-color: #98CEFD;
+
+        }
+
+        .loopart {
+            display: flex;
+            margin-left: 13vw;
+            margin-right: 13vw;
+        }
+
+
+
+        #liste .podcastbillede {
+            width: 8vw;
+            height: 8vw;
+            border-radius: 50%;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            margin-top: 5vw;
+        }
+
+        .tekst {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 1vw;
+        }
+
+        .sepodcast {
+            position: relative;
+            top: 8vw;
+            font-family: unit-rounded, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            white-space: nowrap;
+            color: white;
+            background-color: #DA083A;
+            height: 5%;
+            padding: 9px 16px;
+            border-radius: 7px;
+            left: 0vw;
+
+
+        }
+
+        .tid {
+            font-family: 'Rubik';
+            color: #DA083A;
+            position: relative;
+            top: 2vw;
+            font-size: 1rem;
+            left: 0vw;
+        }
+
+        .titel {
+            font-family: 'Rubik';
+            color: #DA083A;
+            position: relative;
+            bottom: 1vw;
+            font-size: 1rem;
+            left: 0vw;
+        }
+
+        .beskrivelse {
+            font-family: 'Quicksand', sans-serif;
+            position: relative;
+            bottom: 3vw;
+            padding-right: 4vw;
+            font-size: 0.8rem;
+            padding-left: 0vw;
+
+
+
+        }
+
+        H1 {
+            font-family: 'Rubik';
+            color: #DA083A;
+            text-align: center;
+        }
+
+        .sepodcast button {
+            background-color: white;
+            color: #DA083A;
+        }
+    }
+
 </style>
 <template>
     <article class="loopart">
         <h2 class="tid"></h2>
-        <img src="" alt="" class="podcastbillede">
+        <img src="" alt="podcast_billede" class="podcastbillede">
         <div class="tekst">
             <h2 class="titel"></h2>
             <p class="beskrivelse"></p>

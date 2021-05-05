@@ -47,12 +47,12 @@ get_header();
     }
 
     #filtrering button:hover {
-        background-color: #7db7ea;
+        background-color: #72afe5;
         color: white;
     }
 
     #filtrering button:focus {
-        background-color: #97CDFC;
+        background-color: deepskyblue;
     }
 
     .titel {
@@ -94,23 +94,6 @@ get_header();
     }
 
 
-    /*
-
-    .podcastimg {
-        padding-left: 1.2vw;
-        padding-right: 1.2vw;
-        width: 69%;
-        height: 100%;
-        border-radius: 1.5vw;
-        position: relative;
-        left: 16vw;
-        float: right;
-
-
-    }
-*/
-
-
     #podtext {
         padding: 0;
         right: -79px;
@@ -141,14 +124,7 @@ get_header();
 
 
     .podcastimg {
-        /*
-        padding-left: 1.2vw;
-        padding-right: 1.2vw;
-*/
         width: 100%;
-        /*        border-radius: 1.5vw;*/
-
-
     }
 
     #podcastcontainer {
@@ -182,13 +158,11 @@ get_header();
 
     }
 
-
     #podHead img {
         top: -15vw;
         left: 65vw;
         width: 83%;
     }
-
 
 
     #fontimg {
@@ -222,12 +196,258 @@ get_header();
         padding-top: 2vw;
     }
 
-    */
+    @media only screen and (max-width: 600px) {
+
+        #podHead {
+            display: inline-grid;
+            background-color: #04145D;
+            grid-template-columns: 1fr;
+            min-height: 120vw;
+            overflow: hidden;
+        }
+
+        #podHead h2 {
+            font-family: 'Rubik';
+            color: white;
+            padding-left: .7vw;
+            font-size: 2rem;
+        }
+
+        h6 {
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            right: 1vw;
+            position: relative;
+            font-size: 0.8rem;
+            top: 1vw;
+        }
+
+        #main button {
+            font-family: 'Rubik';
+            font-weight: 400;
+            color: black;
+            background-color: #97CDFC;
+            border: none;
+            border-radius: 0.5vw;
+            height: 12vw;
+        }
+
+        #diver H2 {
+            font-family: 'Rubik';
+            color: white;
+            text-align: left;
+            font-weight: 500;
+            font-size: .5rem;
+            padding-left: 1.2vw;
+            padding-right: 1.2vw;
+            padding-bottom: 3vw;
+        }
+
+        #filtrering {
+            text-align: center;
+            height: 30%;
+            position: relative;
+            bottom: 6vw;
+            padding-top: 6vw;
+        }
+
+        #main button img {
+            height: 4.8vw;
+            top: auto;
+        }
+
+        #podcastcontainer {
+            display: inline-grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2vw;
+            grid-row-gap: 2vw;
+            padding: 2vw;
+        }
+
+        #podHead img {
+            top: 1vw;
+            left: 9vw;
+            width: 83%;
+            min-height: 60vw;
+        }
+
+        #holdind {
+            background-color: #04145D;
+            max-height: 53vw;
+            overflow: hidden;
+            border-radius: .5vw;
+            padding-bottom: ;
+        }
+    }
+
+@media only screen and (max-width: 600px) {
+
+    #podHead {
+    display: inline-grid;
+    background-color: #04145D;
+    grid-template-columns: 1fr;
+    min-height: 120vw;
+    overflow: hidden;
+}
+    #podHead h2 {
+    font-family: 'Rubik';
+    color: white;
+    padding-left: .7vw;
+    font-size: 2rem;
+}
+    h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    right: 1vw;
+    position: relative;
+    font-size: 0.8rem;
+    top: 1vw;
+}
+    #main button {
+    font-family: 'Rubik';
+    font-weight: 400;
+    color: black;
+    background-color: #97CDFC;
+    border: none;
+    border-radius: 0.5vw;
+    height: 12vw;
+}
+    #diver H2 {
+    font-family: 'Rubik';
+    color: white;
+    text-align: center;
+    font-weight: 500;
+font-size: 1.5rem;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-bottom: 30vw;
+}
+    #filtrering {
+    text-align: center;
+    height: 30%;
+    position: relative;
+    bottom: 6vw;
+    padding-top: 6vw;
+}
+
+    #main button img {
+    height: 4.8vw;
+    top: auto;
+}
+    #podcastcontainer {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    column-gap: 2vw;
+    grid-row-gap: 2vw;
+    padding: 2vw;
+}
+    #podHead img {
+    top: 1vw;
+    left: 9vw;
+    width: 83%;
+    min-height: 60vw;
+}
+
+#holdind {
+    background-color: #04145D;
+    max-height: 132vw;
+    overflow: hidden;
+    border-radius: .5vw;
+    padding-bottom: 2vw;
+
+}
+    #diver {
+    border-radius: .5vw;
+}
+
+}
+
+    @media only screen and (min-width: 3000px) {
+
+    #podHead {
+    display: inline-grid;
+    background-color: #04145D;
+    grid-template-columns: 1fr 1fr;
+    max-height: 30vw;
+    overflow: visible;
+    width: 100%;
+
+}
+    #podHead img {
+    padding-top: 10vw;
+    left: 55vw;
+    width: 83%;
+}
+        #podHead h2 {
+    font-family: 'Rubik';
+    color: white;
+    padding-left: 6.2vw;
+    font-size: 5rem;
+}
+        h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    right: 45vw;
+    position: relative;
+    font-size: 1.9rem;
+    top: 11vw;
+}
+    #main button img {
+    height: 2.2vw;
+    top: auto;
+}
+    #filtrering {
+    text-align: center;
+    height: 20%;
+    position: relative;
+}
+    #main button {
+    font-family: 'Rubik';
+    font-weight: 400;
+    color: black;
+    background-color: #97CDFC;
+    border: none;
+    border-radius: 0.5vw;
+    height: 4vw;
+    font-size: 1.8em;
+}
+    #podcastcontainer {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+    grid-row-gap: 2vw;
+    padding: 2vw;
+}
+    #diver H2 {
+    font-family: 'Rubik';
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    font-size: 2.4rem;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    padding-bottom: 3vw;
+}
+    .beskrivelse {
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    bottom: 2vw;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    overflow: hidden;
+}
+
+
+}
+
 
 </style>
 <template>
     <article id="holdind">
-        <div id="diver"> <img class="podcastimg" src="" alt="">
+        <div id="diver"> <img class="podcastimg" src="" alt="podcastimg">
             <div>
                 <h2></h2>
                 <p class="beskrivelse"></p>
@@ -243,11 +463,11 @@ get_header();
                 <h2>PODCAST</h2>
                 <h6>Find vores mange programmer, udsendelser, serier, afsnit og episoder her.
                 </h6>
-                <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="">
+                <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/people_train.jpg" alt="train_boy">
             </div>
-            <nav id="filtrering"><button data-podcast="alle">Alle</button> <button data-podcast="67"> AKTUELT </button>
-                <button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt=""> CRIME </button> <button data-podcast="67"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/historie-1.svg" alt=""> HISTORIE </button> <button data-podcast="73"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/KULTUR.svg" alt=""> KULTUR </button>
-                <button data-podcast="72"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/globus.svg" alt=""> NYHEDER </button> <button data-podcast="70"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/handtegn.svg" alt="">UNGDOM</button> <button data-podcast="68"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund-1.svg" alt="">SAMFUND
+            <nav id="filtrering"><button data-podcast="alle">ALLE</button> <button data-podcast="67"> AKTUELT </button>
+                <button data-podcast="71"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/CRIME-1.svg" alt="crime_icon"> CRIME </button> <button data-podcast="67"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/historie-1.svg" alt="historie_icon"> HISTORIE </button> <button data-podcast="73"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/KULTUR.svg" alt="kultur_icon"> KULTUR </button>
+                <button data-podcast="72"> <img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/globus.svg" alt="nyheder_icon"> NYHEDER </button> <button data-podcast="70"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/handtegn.svg" alt="ungdom_icon">UNGDOM</button> <button data-podcast="68"><img src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/samfund-1.svg" alt="samfund_icon">SAMFUND
                 </button>
             </nav>
 

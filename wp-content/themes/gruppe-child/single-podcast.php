@@ -42,10 +42,9 @@ get_header();
                                 </div>
 
                             </div>
-                            <img class="pic" src="" alt="">
+                            <img class="pic" src="" alt="podcastimage">
 
                         </article>
-
                         <div class="seneste_episoder">SENESTE EPISODER</div>
                         <section class="episoder">
                             <template>

@@ -12,6 +12,12 @@
  */
 ?>
 <style>
+    .site-header {
+        z-index: 100;
+        position: sticky;
+        top: 0;
+    }
+
     .site-logo {
         top: -16px;
         border-radius: 0%;
@@ -20,7 +26,12 @@
 
     .site-logo .custom-logo-link .custom-logo {
         width: 55px;
-        margin-top: 9px;
+
+
+    }
+
+    .site-logo .custom-logo-link {
+        margin-top: 0px;
     }
 
     .site-branding-container ul {
@@ -35,20 +46,6 @@
         color: white;
     }
 
-    .main-navigation .main-menu>li>a:hover {
-        color: none;
-    }
-
-    a:hover {
-        color: none;
-
-    }
-
-    .main-navigation .main-menu>li:last-child>a,
-    .main-navigation .main-menu>li:last-child.menu-item-has-children .submenu-expand {
-        color: white;
-    }
-
     svg {
         width: 2.3vw;
         height: 2.3vw;
@@ -60,6 +57,80 @@
     .site-logo:hover {
         color: white;
         box-shadow: none;
+    }
+
+    .site-title a {
+        display: none;
+
+    }
+
+    /*    Hover på a links */
+    #menu-menu a:hover {
+        color: #DC0B3A;
+    }
+
+
+    /*Hover på loud live knap*/
+    #menu-item-1291 a:hover {
+        color: white;
+    }
+
+    /*    loud live knap - farve på tekst og hovereffekt*/
+    #menu-item-1291 a {
+        color: white;
+    }
+
+    #menu-item-1291 a:hover {
+        color: black;
+    }
+
+    #rmp_menu_trigger-1950 .rmp-trigger-box {
+        display: none;
+    }
+
+
+    @media only screen and (max-width: 780px) {
+        .site-logo {
+            position: relative;
+            z-index: 999;
+            margin-bottom: calc(.66 * 1rem);
+            right: 0px;
+            top: auto;
+
+        }
+
+        .site-logo .custom-logo-link .custom-logo {
+            width: 55px;
+            margin-top: 0px;
+            height: auto;
+        }
+
+        .site-logo .custom-logo-link {
+            border-radius: 100%;
+            box-sizing: content-box;
+            display: block;
+            width: 50px;
+            height: 50px;
+            transition: box-shadow 200ms ease-in-out;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        #menu-menu {
+            display: none;
+        }
+
+        #rmp_menu_trigger-1950 .rmp-trigger-box {
+            display: block;
+        }
+
+        .search-icon {
+            display: none;
+        }
+
+        .site-header {
+            height: 4rem;
+        }
     }
 
 </style>

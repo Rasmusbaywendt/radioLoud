@@ -101,6 +101,60 @@ get_header();
         font-weight: 900;
     }
 
+
+    .elementor-13 .elementor-element.elementor-element-d62cabe .slick-prev,
+    .elementor-13 .elementor-element.elementor-element-d62cabe .slick-next {
+        z-index: 30;
+    }
+
+    .elementor-13 .elementor-element.elementor-element-be97253 .slick-prev,
+    .elementor-13 .elementor-element.elementor-element-be97253 .slick-next {
+        z-index: 30;
+    }
+
+    /*Rykker 'mest populære' længere op*/
+    .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+        margin-top: 41px;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        /*Pile i billede karousel*/
+        .elementor-13 .elementor-element.elementor-element-d62cabe .slick-prev,
+        .elementor-13 .elementor-element.elementor-element-d62cabe .slick-next {
+            top: 313px;
+        }
+
+        .elementor-13 .elementor-element.elementor-element-be97253 .slick-prev,
+        .elementor-13 .elementor-element.elementor-element-be97253 .slick-next {
+            top: 313px;
+        }
+
+        /*Rykker 'mest populære' længere op*/
+        .elementor-13 .elementor-element.elementor-element-353545f .elementor-heading-title {
+            margin-top: -58px;
+        }
+
+        /*Større fontstørrelse på 'nyt fra loud' podcasts*/
+        .elementor-13 .elementor-element.elementor-element-d62cabe .ha-slick-title {
+            font-size: 21px;
+        }
+
+        .elementor-13 .elementor-element.elementor-element-be97253 .ha-slick-title {
+            font-size: 21px;
+        }
+
+        /*Større fontstørrelse på 'Nyt fra Loud' podcast p tekst*/
+        .elementor-13 .elementor-element.elementor-element-d62cabe .ha-slick-subtitle {
+            font-size: 15px;
+        }
+
+        /*Større fontstørrelse på 'mest populære' podcast p tekst*/
+        .elementor-13 .elementor-element.elementor-element-be97253 .ha-slick-subtitle {
+            font-size: 15px;
+        }
+    }
+
 </style>
 
 <div id="primary" class="content-area">

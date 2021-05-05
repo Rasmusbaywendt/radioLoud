@@ -38,6 +38,13 @@
         width: 159px;
         position: relative;
     }
+        @media only screen and (max-width: 780px) {
+        #menu-footer-container{
+    display: flex;
+    gap: 0px;
+    color: black;
+}
+    }
 
 </style>
 
