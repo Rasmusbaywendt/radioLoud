@@ -153,6 +153,7 @@ get_header();
         .elementor-13 .elementor-element.elementor-element-be97253 .ha-slick-subtitle {
             font-size: 15px;
         }
+
     }
 
 </style>

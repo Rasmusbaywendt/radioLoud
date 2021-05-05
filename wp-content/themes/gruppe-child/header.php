@@ -131,6 +131,12 @@
         .site-header {
             height: 4rem;
         }
+
+        #rmp-menu-wrap-1950 .rmp-menu,
+        #rmp-menu-wrap-1950 .rmp-submenu {
+            font-family: 'unit-rounded';
+            font-size: 18px;
+        }
     }
 
 </style>
