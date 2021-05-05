@@ -30,15 +30,15 @@ get_header();
 
                                     <h3>Lyt til podcastet her!</h3>
 
-                                    <a class="loud_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/loud_png.png" alt="play-button"></a>
+                                    <a class="loud_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/05/loud_75.png" alt="play-button"></a>
 
-                                    <a class="itunes_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/apple_png.png"></a>
+                                    <a class="itunes_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/05/itunes_75.png"></a>
 
-                                    <a class="spotify_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/spotify_png.png" alt="play-button"></a>
+                                    <a class="spotify_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/05/spotify_75.png" alt="play-button"></a>
 
-                                    <a class="google_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/google_png.png" alt="play-button"></a>
+                                    <a class="google_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/05/google_75.png" alt="play-button"></a>
 
-                                    <a class="podimo_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/04/podimo_png.png" alt="play-button"></a>
+                                    <a class="podimo_icon" href=""><img class="play_knap" src="http://julieeggertsen.dk/kea/2_sem/tema_09/09_loud/09_loud_site/wp-content/uploads/2021/05/podimo_75.png" alt="play-button"></a>
                                 </div>
 
                             </div>
