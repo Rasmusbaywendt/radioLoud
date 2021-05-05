@@ -88,9 +88,6 @@
         display: none;
     }
 
-    .elementor-13 .elementor-element.elementor-element-353545f .elementor-heading-title {
-        margin-top: 65px;
-    }
 
     @media only screen and (max-width: 780px) {
         .site-logo {
