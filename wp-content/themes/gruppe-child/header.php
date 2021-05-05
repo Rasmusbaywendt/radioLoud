@@ -26,7 +26,12 @@
 
     .site-logo .custom-logo-link .custom-logo {
         width: 55px;
-        margin-top: 9px;
+
+
+    }
+
+    .site-logo .custom-logo-link {
+        margin-top: 0px;
     }
 
     .site-branding-container ul {
@@ -78,29 +83,53 @@
     #menu-item-1291 a:hover {
         color: black;
     }
-    
+
+    #rmp_menu_trigger-1950 .rmp-trigger-box {
+        display: none;
+    }
+
     @media only screen and (max-width: 780px) {
         .site-logo {
-    position: relative;
-    z-index: 999;
-    margin-bottom: calc(.66 * 1rem);
-    right: 0px;
-    top: auto;
+            position: relative;
+            z-index: 999;
+            margin-bottom: calc(.66 * 1rem);
+            right: 0px;
+            top: auto;
 
-}
-    .site-logo .custom-logo-link .custom-logo {
-    width: 55px;
-    margin-top: 0px;
-    height: auto;    
-}
+        }
+
+        .site-logo .custom-logo-link .custom-logo {
+            width: 55px;
+            margin-top: 0px;
+            height: auto;
+        }
+
         .site-logo .custom-logo-link {
-    border-radius: 100%;
-    box-sizing: content-box;
-    display: block;
-    width: 50px;
-    height: 50px;
-    transition: box-shadow 200ms ease-in-out;
-}
+            border-radius: 100%;
+            box-sizing: content-box;
+            display: block;
+            width: 50px;
+            height: 50px;
+            transition: box-shadow 200ms ease-in-out;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        #menu-menu {
+            display: none;
+        }
+
+        #rmp_menu_trigger-1950 .rmp-trigger-box {
+            display: block;
+        }
+
+        .search-icon {
+            display: none;
+        }
+
+        .site-header {
+            height: 4rem;
+        }
     }
 
 </style>
