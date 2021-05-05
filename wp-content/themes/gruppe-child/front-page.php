@@ -153,6 +153,16 @@ get_header();
         .elementor-13 .elementor-element.elementor-element-be97253 .ha-slick-subtitle {
             font-size: 15px;
         }
+
+        /*Baggrundsfarve til burgermenu*/
+        #rmp-container-1950 {
+            background-color: #DC0B37;
+        }
+
+        #rmp-menu-wrap-1950 .rmp-menu-item-link {
+            font-size: 18px;
+            font-family: 'unit-rounded', sans-serif;
+        }
     }
 
 </style>
