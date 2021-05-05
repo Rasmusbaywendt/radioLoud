@@ -45,6 +45,7 @@ get_header();
                             <img class="pic" src="" alt="">
 
                         </article>
+
                         <div class="seneste_episoder">SENESTE EPISODER</div>
                         <section class="episoder">
                             <template>
